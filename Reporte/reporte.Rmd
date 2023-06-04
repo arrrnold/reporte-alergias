@@ -9,15 +9,13 @@ output: pdf_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R jaja
+## Objetivos
+- Analizar los datos dados de alta en el sistema relacionados con las alergias para identificar cual es la más repetida y que numero de alergia es la más común
+- Hacer el análisis con las herramientas de regresión lineal y el algoritmo KNN para observar las diferencias entre estos dos
+## Métodos
+Uso de regresión lineal
+Uso del algoritmo KNN
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r cars}
-summary(cars)
-```
 
 ## Including Plots
 

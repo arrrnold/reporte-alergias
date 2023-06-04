@@ -1,0 +1,612 @@
+Names;lastNames;email;password;alergias;numero_alergias
+Juan;Gómez;juangomez1@example.com;Abc123!@;Huevo;1
+María;García;mariagarcia2@example.com;Def456$#;Cacahuetes;1
+Carlos;Hernández;carloshernandez3@example.com;Ghi789?&;Nueces;1
+Laura;López;lauralopez4@example.com;Jkl012.@#;Almendras;1
+Pedro;Martínez;pedromartinez5@example.com;Mno345?&$;Soya;1
+Ana;Rodríguez;anarodriguez6@example.com;Pqr678!@#;Pescado;1
+Luis;Torres;luistorres7@example.com;Stu901.?&$;Mariscos;1
+Andrea;Hernández;andreahernandez8@example.com;Vwx234@#$;Huevo;1
+Gabriel;González;gabrielgonzalez9@example.com;Yz01.?&$#;Soya;1
+Sofía;Rodríguez;sofia.rodriguez10@example.com;Abc123!@;Pescado;1
+Diego;Gómez;diegogomez11@example.com;Def456$#;Mariscos;1
+Valentina;López;valentinalopez12@example.com;Ghi789?&;Huevo;1
+Andrés;Torres;andrestorres13@example.com;Jkl012.@#;Soya;1
+Camila;Hernández;camilahernandez14@example.com;Mno345?&$;Pescado;1
+Javier;García;javiergarcia15@example.com;Pqr678!@#;Mariscos;1
+Daniela;López;danielalopez16@example.com;Stu901.?&$;Huevo;1
+Eduardo;González;eduardogonzalez17@example.com;Vwx234@#$;Soya;1
+Valeria;Martínez;valeriamartinez18@example.com;Yz01.?&$#;Pescado;1
+Alejandro;Rodríguez;alejandrorodriguez19@example.com;Abc123!@;Mariscos;1
+Carolina;Gómez;carolinagomez20@example.com;Def456$#;Huevo;1
+Javier;García;javiergarcia21@example.com;Abc123!@#;Gluten;1
+Daniela;Martínez;danielamartinez22@example.com;Def456$#;Lactosa;1
+Carlos;Gómez;carlosgomez23@example.com;Ghi789?&;Cacahuetes;1
+María;Hernández;mariahernandez24@example.com;Jkl012.@#;Nueces;1
+Andrés;González;andresgonzalez25@example.com;Mno345?&$;Almendras;1
+Laura;Torres;lauratorres26@example.com;Pqr678!@#;Soya;1
+Gabriela;López;gabrielalopez27@example.com;Stu901.?&$;Pescado;1
+Sergio;Rodríguez;sergiorodriguez28@example.com;Vwx234@#$;Mariscos;1
+Valeria;García;valeriagarcia29@example.com;Yz01.?&$#;Huevo;1
+Manuel;Hernández;manuelhernandez30@example.com;Abc123!@;Cacahuetes;1
+Sara;Martínez;saramartinez31@example.com;Def456$#;Nueces;1
+Gonzalo;Gómez;gonzalogomez32@example.com;Ghi789?&;Almendras;1
+Carolina;Torres;carolinatorres33@example.com;Jkl012.@#;Soya;1
+Roberto;González;robertogonzalez34@example.com;Mno345?&$;Pescado;1
+Valentina;López;valentinalopez35@example.com;Pqr678!@#;Mariscos;1
+Ricardo;Hernández;ricardohernandez36@example.com;Stu901.?&$;Huevo;1
+Isabel;García;isabelgarcia37@example.com;Vwx234@#$;Soya;1
+Luis;Rodríguez;luisrodriguez38@example.com;Yz01.?&$#;Pescado;1
+Elena;Martínez;elenamartinez39@example.com;Abc123!@;Mariscos;1
+Pedro;Gómez;pedrogomez40@example.com;Def456$#;Huevo;1
+José;González;josegonzalez41@example.com;Abc123!@#;Cacahuetes;1
+Carmen;Sánchez;carmensanchez42@example.com;Def456$#;Nueces;1
+Antonio;López;antoniolopez43@example.com;Ghi789?&;Almendras;1
+Marta;Gómez;martagomez44@example.com;Jkl012.@#;Soya;1
+Roberto;Hernández;robertohernandez45@example.com;Mno345?&$;Pescado;1
+Patricia;Torres;patriciatorres46@example.com;Pqr678!@#;Mariscos;1
+Jorge;García;jorgegarcia47@example.com;Stu901.?&$;Huevo;1
+Beatriz;Martínez;beatrizmartinez48@example.com;Vwx234@#$;Soya;1
+Raúl;González;raulgonzalez49@example.com;Yz01.?&$#;Pescado;1
+Elena;López;elenalopez50@example.com;Abc123!@;Mariscos;1
+Francisco;Hernández;franciscohernandez51@example.com;Def456$#;Huevo;1
+Lucía;Gómez;luciagomez52@example.com;Ghi789?&;Cacahuetes;1
+Manuel;Torres;manueltorres53@example.com;Jkl012.@#;Nueces;1
+Sara;García;saragarcia54@example.com;Mno345?&$;Almendras;1
+Alejandro;Martínez;alejandromartinez55@example.com;Pqr678!@#;Soya;1
+Ana;González;anagonzalez56@example.com;Stu901.?&$;Pescado;1
+Diego;López;diegolopez57@example.com;Vwx234@#$;Mariscos;1
+María;Hernández;mariahernandez58@example.com;Yz01.?&$#;Huevo;1
+Carlos;García;carlosgarcia59@example.com;Abc123!@;Soya;1
+Laura;Martínez;lauramartinez60@example.com;Def456$#;Pescado;1
+Adrián;Vargas;adrianvargas61@example.com;Abc123!@#;Gluten;1
+Catalina;Pérez;catalinaperez62@example.com;Def456$#;Lactosa;1
+Mateo;Navarro;mateonavarro63@example.com;Ghi789?&;Cacahuetes;1
+Valentina;Cortés;valentinacortes64@example.com;Jkl012.@#;Nueces;1
+Leonardo;Molina;leonardomolina65@example.com;Mno345?&$;Almendras;1
+Diana;Soto;dianasoto66@example.com;Pqr678!@#;Soya;1
+Rafael;Vega;rafaelvega67@example.com;Stu901.?&$;Pescado;1
+Carolina;Montes;carolinamontes68@example.com;Vwx234@#$;Mariscos;1
+Gabriel;Santos;gabrielsantos69@example.com;Yz01.?&$#;Huevo;1
+Luciana;Ortega;lucianaortega70@example.com;Abc123!@;Cacahuetes;1
+Luisa;Rojas;luisarojas71@example.com;Def456$#;Nueces;1
+Javier;Guerra;javierguerra72@example.com;Ghi789?&;Almendras;1
+María;Silva;mariasilva73@example.com;Jkl012.@#;Soya;1
+Daniel;Méndez;danielmendez74@example.com;Mno345?&$;Pescado;1
+Sofía;Vargas;sofiavargas75@example.com;Pqr678!@#;Mariscos;1
+Lorenzo;Cortés;lorenzocortes76@example.com;Stu901.?&$;Huevo;1
+Mariana;López;marianalopez77@example.com;Vwx234@#$;Soya;1
+Sebastián;Santos;sebastiansantos78@example.com;Yz01.?&$#;Pescado;1
+Valeria;Montes;valeriamontes79@example.com;Abc123!@;Mariscos;1
+Joaquín;Vega;joaquinvega80@example.com;Def456$#;Huevo;1
+Isabella;Morales;isabellamorales81@example.com;Abc123!@#;Cacahuetes;1
+Andrés;Cruz;andrescruz82@example.com;Def456$#;Nueces;1
+Valeria;Herrera;valeriaherrera83@example.com;Ghi789?&;Almendras;1
+Miguel;Santos;miguelsantos84@example.com;Jkl012.@#;Soya;1
+Florencia;Cortés;florenciacortes85@example.com;Mno345?&$;Pescado;1
+Emilio;Rojas;emiliorojas86@example.com;Pqr678!@#;Mariscos;1
+Martina;Vega;martinavega87@example.com;Stu901.?&$;Huevo;1
+Valentín;Montes;valentinmontes88@example.com;Vwx234@#$;Soya;1
+Isabel;Silva;isabelsilva89@example.com;Yz01.?&$#;Pescado;1
+Maximiliano;Guerra;maximilianoguerra90@example.com;Abc123!@;Mariscos;1
+Luna;Vargas;lunavargas91@example.com;Def456$#;Huevo;1
+Emiliano;Soto;emilianosoto92@example.com;Ghi789?&;Cacahuetes;1
+Camila;Molina;camilamolina93@example.com;Jkl012.@#;Nueces;1
+Benjamín;Ortega;benjaminortega94@example.com;Mno345?&$;Almendras;1
+Victoria;Rojas;victoriarojas95@example.com;Pqr678!@#;Soya;1
+Gabriela;Vega;gabrielavega96@example.com;Stu901.?&$;Pescado;1
+Matías;Cortés;matiascortes97@example.com;Vwx234@#$;Mariscos;1
+Julieta;López;julietalopez98@example.com;Yz01.?&$#;Huevo;1
+Santiago;Herrera;santiagoherrera99@example.com;Abc123!@;Soya;1
+Emilia;Montes;emiliamontes100@example.com;Def456$#;Pescado;
+Gabriel;Gómez;gabrielgomez101@example.com;Abc123!@#;Aceitunas, Tomates frescos;2
+Valentina;Suárez;valentinasuarez102@example.com;Def456$#;Queso parmesano, Pescado;2
+Alejandro;Castillo;alejandrocastillo103@example.com;Ghi789?&;Leche condensada, Huevo;2
+Ana;Navarro;ananavarro104@example.com;Jkl012.@#;Mostaza, Mariscos;2
+Lucas;Peralta;lucasperalta105@example.com;Mno345?&$;Vinagre balsámico, Cacahuetes;2
+Martina;Rojas;martinarojas106@example.com;Pqr678!@#;Almendras, Salsa de tomate;2
+Daniel;Ortega;danielortega107@example.com;Stu901.?&$;Vinagre de vino tinto, Salsa de chile;2
+Catalina;Flores;catalinaflores108@example.com;Vwx234@#$;Camarones, Aceite de oliva;2
+Diego;Mendoza;diegomendoza109@example.com;Yz01.?&$#;Vinagre de arroz, Cebolla;2
+Sofía;Vargas;sofiavargas110@example.com;Abc123!@;Salsa de enchilada, Pollo;2
+Carlos;Hernández;carloshernandez111@example.com;Def456$#;Salsa de jalapeño, Ternera;2
+Antonella;Soto;antonellasoto112@example.com;Ghi789?&;Salsa de tamarindo, Cerdo;2
+Luis;González;luisgonzalez113@example.com;Jkl012.@#;Salsa de chipotle, Pescado;2
+Isabella;Silva;isabellasilva114@example.com;Mno345?&$;Salsa hoisin, Mariscos;2
+Juan;Torres;juantorres115@example.com;Pqr678!@#;Salsa de soja, Huevo;2
+Carolina;Molina;carolinamolina116@example.com;Stu901.?&$;Salsa de tomate, Aceitunas;2
+Samuel;Cabrera;samuelcabrera117@example.com;Vwx234@#$;Leche condensada, Queso parmesano;2
+Victoria;Vega;victoriavega118@example.com;Yz01.?&$#;Mostaza, Cacahuetes;2
+Julián;Rojas;julianrojas119@example.com;Abc123!@;Vinagre de vino tinto, Tomates frescos;2
+Mariana;López;marianalopez101@example.com;Abc123!@#;Pimiento, Almejas;2
+Sebastián;García;sebastiangarcia102@example.com;Def456$#@;Salsa de queso, Cacahuetes;2
+Camila;Ramírez;camilaramirez103@example.com;Ghi789?&$;Vinagre de manzana, Pavo;2
+Mateo;Herrera;mateoherrera104@example.com;Jkl012.@#;Salsa de jalapeño, Cerdo;2
+Isabel;Muñoz;isabelmunoz105@example.com;Mno345?&;Leche de coco, Chorizo;2
+Nicolás;Cortés;nicolascortes106@example.com;Pqr678!@#;Vino tinto, Almendras;2
+Valeria;Sánchez;valeriasanchez107@example.com;Stu901.?&$;Vinagre de sidra, Salsa de chile;2
+Emilio;Hernández;emiliohernandez108@example.com;Vwx234@#$;Aceite de oliva, Tomates frescos;2
+Renata;González;renatagonzalez109@example.com;Yz01.?&$#;Vinagre de arroz, Bacon;2
+Leonardo;Gómez;leonardogomez110@example.com;Abc123!@;Salsa de enchilada, Mejillones;2
+María;Pérez;mariaperez111@example.com;Def456$#;Salsa de chipotle, Ternera;2
+Santiago;Silva;santiagosilva112@example.com;Ghi789?&;Salsa de tamarindo, Pollo;2
+Valentina;Castro;valentinacastro113@example.com;Jkl012.@#;Salsa hoisin, Salchichas;2
+Gabriel;Ortega;gabrielortega114@example.com;Mno345?&$;Salsa de soja, Langostinos;2
+Julieta;Luna;julietaluna115@example.com;Pqr678!@#;Salsa de tomate, Caldo de pollo;2
+Diego;Vega;diegovega116@example.com;Stu901.?&$;Vinagre balsámico, Sal;2
+Valeria;Flores;valeriaflores117@example.com;Vwx234@#$;Camarones, Aceitunas;2
+Lucas;Rojas;lucasrojas118@example.com;Yz01.?&$#;Leche condensada, Caldo de carne;2
+Valentina;Molina;valentinamolina119@example.com;Abc123!@;Mostaza, Anchoas en conserva;2
+Andrés;Fernández;andresfernandez120@example.com;Abc123!@#;Aceitunas, Calabacín;2
+Valentina;Cruz;valentinacruz121@example.com;Def456$#@;Pescado, Calamares;2
+Luciano;Mendoza;lucianomendoza122@example.com;Ghi789?&$;Vinagre de vino blanco, Pimentón picante;2
+Emma;Navarro;emmanavarro123@example.com;Jkl012.@#;Vinagre de vino tinto, Leche evaporada;2
+Matías;Ortiz;matiasortiz124@example.com;Mno345?&;Salsa de queso, Lentejas;2
+Sofía;Ríos;sofiarios125@example.com;Pqr678!@#;Salsa de jalapeño, Zanahorias;2
+Benjamín;Cabrera;benjamincabrera126@example.com;Stu901.?&$;Salsa de chile, Berengena;2
+Valeria;Vargas;valeriavargas127@example.com;Vwx234@#$;Salsa de tamarindo, Ciruelas pasas;2
+Daniel;Acosta;danielacosta128@example.com;Yz01.?&$#;Salsa de chipotle, Nuez moscada;2
+Isabella;Miranda;isabellamiranda129@example.com;Abc123!@;Salsa hoisin, Limoncello;2
+Lorenzo;Moreno;lorenzomoreno130@example.com;Def456$#;Salsa de soja, Bacalao;2
+Valentina;Gallardo;valentinagallardo131@example.com;Ghi789?&;Salsa de tomate, Arroz;2
+Sebastián;Paredes;sebastianparedes132@example.com;Jkl012.@#;Vino blanco, Cilantro;2
+Valeria;Sepúlveda;valeriasepulveda133@example.com;Mno345?&$;Vino tinto, Espinacas;2
+Emilia;Soto;emiliasoto134@example.com;Pqr678!@#;Caldo de pollo, Acelgas;2
+Benjamín;Muñoz;benjaminmunoz135@example.com;Stu901.?&$;Caldo de carne, Lechuga;2
+Valentina;Salgado;valentinasalgado136@example.com;Vwx234@#$;Miel, Albahaca;2
+Matías;Vidal;matiasvidal137@example.com;Yz01.?&$#;Mostaza, Tomillo;2
+Lucía;Correa;luciacorrea138@example.com;Abc123!@;Masa de hojaldre, Romero;2
+Gabriel;Hernández;gabrielhernandez140@example.com;Abc123!@#;Pimiento, Salchichas;2
+Martina;Guerrero;martinaguerrero141@example.com;Def456$#@;Levadura, Jamón serrano;2
+Sebastián;Campos;sebastiancampos142@example.com;Ghi789?&$;Cebolla, Bacon;2
+Valentina;Montes;valentinamontes143@example.com;Jkl012.@#;Pollo, Chorizo;2
+Luciano;Vega;lucianovega144@example.com;Mno345?&;Ternera, Lomo;2
+Emma;Olivares;emmaolivares145@example.com;Pqr678!@#;Cerdo, Pescado;2
+Matías;Peña;matiaspena146@example.com;Stu901.?&$;Calabaza, Langostinos;2
+Sofía;Ponce;sofiaponce147@example.com;Vwx234@#$;Patatas, Almejas;2
+Benjamín;Silva;benjaminsilva148@example.com;Yz01.?&$#;Zanahorias, Calamares;2
+Valeria;Rojas;valeriarojas149@example.com;Abc123!@;Brócoli, Pulpo;2
+Lorenzo;Vargas;lorenzovargas150@example.com;Def456$#;Calabacín, Aceitunas;2
+Valentina;Cortés;valentinacortes151@example.com;Ghi789?&;Judías verdes, Tomates frescos;2
+Benjamín;Araya;benjaminaraya152@example.com;Jkl012.@#;Berengena, Camarones;2
+Valeria;Soto;valeriasoto153@example.com;Mno345?&$;Espinacas, Mejillones;2
+Sebastián;Gómez;sebastiangomez154@example.com;Pqr678!@#;Lechuga, Almejas;2
+Valentina;Molina;valentinamolina155@example.com;Stu901.?&$;Cebolla tierna, Langostinos;2
+Emilia;Castillo;emiliacastillo156@example.com;Vwx234@#$;Pimiento, Calamares;2
+Benjamín;Morales;benjaminmorales157@example.com;Yz01.?&$#;Salchichas, Aceitunas;2
+Valeria;Correa;valeriacorrea158@example.com;Abc123!@;Salchichas, Tomates frescos;2
+Matías;Vidal;matiasvidal159@example.com;Def456$#@;Masa de hojaldre, Calabacín;2
+Alejandro;López;alejandrolopez160@example.com;Abc123!@#;;0
+Valentina;García;valentinagarcia161@example.com;Def456$#@;;0
+Matías;Torres;matiastorres162@example.com;Ghi789?&$;;0
+Fernanda;Ortega;fernandaortega163@example.com;Jkl012.@#;;0
+Santiago;Rivas;santiagorivas164@example.com;Mno345?&;;0
+Sofía;Navarro;sofianavarro165@example.com;Pqr678!@#;;0
+Gabriel;Camacho;gabrielcamacho166@example.com;Stu901.?&$;;0
+Isabella;Santos;isabellasantos167@example.com;Vwx234@#$;;0
+Lucas;Vargas;lucasvargas168@example.com;Yz01.?&$#;;0
+Valentina;Moreno;valentinamoreno169@example.com;Abc123!@;;0
+Mateo;Silva;mateosilva170@example.com;Def456$#;;0
+Martina;Cruz;martinacruz171@example.com;Ghi789?&;;0
+Sebastián;Guerrero;sebastianguerrero172@example.com;Jkl012.@#;;0
+Valeria;Pérez;valeriaperez173@example.com;Mno345?&$;;0
+Diego;Hernández;diegohernandez174@example.com;Pqr678!@#;;0
+Emma;Gómez;emmagomez175@example.com;Stu901.?&$;;0
+Luciano;Fuentes;lucianofuentes176@example.com;Vwx234@#$;;0
+Valentina;Muñoz;valentinamunoz177@example.com;Yz01.?&$#;;0
+Matías;Escobar;matiasescobar178@example.com;Abc123!@;;0
+Isabella;Herrera;isabellaherrera179@example.com;Def456$#;;0
+Gabriel;Vega;gabrielvega180@example.com;Abc123!@#;;0
+Isabella;Romero;isabellaromero181@example.com;Def456$#@;;0
+Samuel;González;samuelgonzalez182@example.com;Ghi789?&$;;0
+Valentina;Rojas;valentinarojas183@example.com;Jkl012.@#;;0
+Mateo;Pérez;mateoperez184@example.com;Mno345?&;;0
+Sofía;Herrera;sofiaherrera185@example.com;Pqr678!@#;;0
+Sebastián;Ramírez;sebastianramirez186@example.com;Stu901.?&$;;0
+Valeria;Molina;valeriamolina187@example.com;Vwx234@#$;;0
+Benjamín;Vargas;benjaminvargas188@example.com;Yz01.?&$#;;0
+Luciana;Gómez;lucianagomez189@example.com;Abc123!@;;0
+Diego;Hernández;diegohernandez190@example.com;Def456$#;;0
+Emma;Soto;emmasoto191@example.com;Ghi789?&;;0
+Lucas;Herrera;lucasherrera192@example.com;Jkl012.@#;;0
+Martina;Muñoz;martinamunoz193@example.com;Mno345?&$;;0
+Joaquín;Silva;joaquinsilva194@example.com;Pqr678!@#;;0
+Valentina;Guerrero;valentinaguerrero195@example.com;Stu901.?&$;;0
+Benjamín;Mendoza;benjaminmendoza196@example.com;Vwx234@#$;;0
+Maite;Castillo;maitecastillo197@example.com;Yz01.?&$#;;0
+Santiago;Paz;santiagopaz198@example.com;Abc123!@;;0
+Valeria;Sánchez;valeriasanchez199@example.com;Def456$#;;0
+Emilio;Flores;emilioflores200@example.com;Ghi789?&;;0
+Martina;López;martinalopez201@example.com;Jkl012.@#;;0
+Matías;Rojas;matiasrojas202@example.com;Mno345?&$;;0
+Sofía;García;sofiagarcia203@example.com;Pqr678!@#;;0
+Sebastián;Castro;sebastiancastro204@example.com;Stu901.?&$;;0
+Valentina;Soto;valentinasoto205@example.com;Vwx234@#$;;0
+Tomás;Molina;tomasmolina206@example.com;Yz01.?&$#;;0
+Isabella;Vega;isabellavega207@example.com;Abc123!@;;0
+Matías;Pérez;matiasperez208@example.com;Def456$#;;0
+Martina;Herrera;martinaherrera209@example.com;Ghi789?&;;0
+Alejandro;Guzmán;alejandroguzman210@example.com;Abc123!@#;;0
+Adriana;Santos;adrianasantos211@example.com;Def456$#@;;0
+Javier;Delgado;javierdelgado212@example.com;Ghi789?&$;;0
+Camila;Rivas;camilarivas213@example.com;Jkl012.@#;;0
+Andrés;Navarro;andresnavarro214@example.com;Mno345?&;;0
+Carolina;Fuentes;carolinafuentes215@example.com;Pqr678!@#;;0
+Fernando;Luna;fernandoluna216@example.com;Stu901.?&$;;0
+Catalina;Vargas;catalinavargas217@example.com;Vwx234@#$;;0
+Mauricio;Cortés;mauriciocortes218@example.com;Yz01.?&$#;;0
+Daniela;Mendoza;danielamendoza219@example.com;Abc123!@;;0
+Miguel;Castro;miguelcastro220@example.com;Def456$#;;0
+Laura;Soto;laurasoto221@example.com;Ghi789?&;;0
+Gustavo;Hernández;gustavohernandez222@example.com;Jkl012.@#;;0
+Daniela;Muñoz;danielamunoz223@example.com;Mno345?&$;;0
+José;Silva;josesilva224@example.com;Pqr678!@#;;0
+Carolina;Guerrero;carolinaguerrero225@example.com;Stu901.?&$;;0
+Juan;Mendoza;juanmendoza226@example.com;Vwx234@#$;;0
+Ana;Castillo;anacastillo227@example.com;Yz01.?&$#;;0
+Luis;Paz;luispaz228@example.com;Abc123!@;;0
+Carolina;Sánchez;carolinasanchez229@example.com;Def456$#;;0
+Sergio;Flores;sergioflores230@example.com;Ghi789?&;;0
+Laura;López;lauralopez231@example.com;Jkl012.@#;;0
+Andrés;Rojas;andresrojas232@example.com;Mno345?&$;;0
+Sofía;García;sofiagarcia233@example.com;Pqr678!@#;;0
+Sebastián;Castro;sebastiancastro234@example.com;Stu901.?&$;;0
+Valentina;Soto;valentinasoto235@example.com;Vwx234@#$;;0
+Tomás;Molina;tomasmolina236@example.com;Yz01.?&$#;;0
+Isabella;Vega;isabellavega237@example.com;Abc123!@;;0
+Matías;Pérez;matiasperez238@example.com;Def456$#;;0
+Martina;Herrera;martinaherrera239@example.com;Ghi789?&;;0
+Antonio;Martínez;antoniomartinez240@example.com;Abc123!@#;;0
+María;Herrera;mariaherrera241@example.com;Def456$#@;;0
+Roberto;Pérez;robertoperez242@example.com;Ghi789?&$#@;;0
+Isabel;González;isabelgonzalez243@example.com;Jkl012.?&$#@;;0
+Francisco;Vargas;franciscovargas244@example.com;Mno345?&$#@;;0
+Elena;Sánchez;elenasanchez245@example.com;Pqr678?&$#@;;0
+Alejandro;Romero;alejandroromero246@example.com;Stu901?&$#@;;0
+María;Morales;mariamorales247@example.com;Vwx234.?&$#@;;0
+Pedro;Mendoza;pedromendoza248@example.com;Yz01.?&$#@;;0
+Raquel;García;raquelgarcia249@example.com;Abc123!@#;;0
+Jorge;Flores;jorgeflores250@example.com;Def456$#@;;0
+Ana;Paz;anapaz251@example.com;Ghi789?&$#@;;0
+Carlos;Silva;carlossilva252@example.com;Jkl012.?&$#@;;0
+María;Soto;mariasoto253@example.com;Mno345?&$#@;;0
+Roberto;Hernández;robertohernandez254@example.com;Pqr678?&$#@;;0
+Laura;Gómez;lauragomez255@example.com;Stu901?&$#@;;0
+Fernando;López;fernandolopez256@example.com;Vwx234.?&$#@;;0
+Mónica;Castro;monicacastro257@example.com;Yz01.?&$#@;;0
+Gonzalo;Rojas;gonzalorojas258@example.com;Abc123!@#;;0
+Valentina;Vega;valentinavega259@example.com;Def456$#@;;0
+Daniel;Sánchez;danielsanchez260@example.com;Ghi789?&$#@;;0
+Luisa;Flores;luisaflores261@example.com;Jkl012.?&$#@;;0
+Diego;Molina;diegomolina262@example.com;Mno345?&$#@;;0
+María;González;mariagonzalez263@example.com;Pqr678?&$#@;;0
+Sergio;Gómez;sergiogomez264@example.com;Stu901?&$#@;;0
+Andrea;Herrera;andreaherrera265@example.com;Vwx234.?&$#@;;0
+Pablo;Rojas;pablorojas266@example.com;Yz01.?&$#@;;0
+Carolina;García;carolinagarcia267@example.com;Abc123!@#;;0
+Manuel;Pérez;manuelperez268@example.com;Def456$#@;;0
+Camila;Herrera;camilaherrera269@example.com;Ghi789?&$#@;;0
+Andrés;Aspiri;camilaherrera2AA69@example.com;Ghi7ASDA89?&$#@;;0
+Juan;Ramírez;juanramirez276@example.com;Abc123!@#;;0
+Sofía;Torres;sofiatorres277@example.com;Def456$#@;;0
+Andrés;Navarro;andresnavarro278@example.com;Ghi789?&$#@;;0
+Valeria;Guzmán;valeriaguzman279@example.com;Jkl012.?&$#@;;0
+David;Ortega;davidortega280@example.com;Mno345?&$#@;;0
+Gabriela;Ríos;gabrielarios281@example.com;Pqr678?&$#@;;0
+Óscar;Cortés;oscarcortes282@example.com;Stu901?&$#@;;0
+Carolina;Delgado;carolinadelgado283@example.com;Vwx234.?&$#@;;0
+Juan;Mendoza;juanmendoza284@example.com;Yz01.?&$#@;;0
+Ana;Vargas;anavargas285@example.com;Abc123!@#;;0
+Miguel;Rojas;miguelrojas286@example.com;Def456$#@;;0
+Fernanda;Paz;fernandapaz287@example.com;Ghi789?&$#@;;0
+Sebastián;Castañeda;sebastiancastaneda288@example.com;Jkl012.?&$#@;;0
+Camila;Sánchez;camilasanchez289@example.com;Mno345?&$#@;;0
+Daniel;Pérez;danielperez290@example.com;Pqr678?&$#@;;0
+Alejandra;Hernández;alejandrahernandez291@example.com;Stu901?&$#@;;0
+Diego;Luna;diegoluna292@example.com;Vwx234.?&$#@;;0
+Sara;Gómez;saragomez293@example.com;Yz01.?&$#@;;0
+Adrián;Silva;adriansilva294@example.com;Abc123!@#;;0
+Valentina;Delgado;valentinadelgado295@example.com;Def456$#@;;0
+Pedro;Castañeda;pedrocastaneda296@example.com;Ghi789?&$#@;;0
+Lucía;Vargas;luciavargas297@example.com;Jkl012.?&$#@;;0
+Javier;Ortega;javierortega298@example.com;Mno345?&$#@;;0
+María;Guzmán;mariaguzman299@example.com;Pqr678?&$#@;;0
+Andrea;Ríos;andrearíos300@example.com;Stu901?&$#@;;0
+Rodrigo;Navarro;rodrigonavarro301@example.com;Vwx234.?&$#@;;0
+Paula;Torres;paulatorres302@example.com;Yz01.?&$#@;;0
+Juan;Cortés;juancortés303@example.com;Abc123!@#;;0
+Laura;Ramírez;lauraramírez304@example.com;Def456$#@;;0
+Cristian;Delgado;cristiandelgado305@example.com;Ghi789?&$#@;;0
+Javier;Santos;javiersantos031@example.com;Abc123!@#;;0
+Marta;Herrera;martaherrera032@example.com;Def456$#@;;0
+Diego;Vargas;diegovargas033@example.com;Ghi789?&$#@;;0
+Sara;Giménez;saragimenez034@example.com;Jkl012.?&$#@;;0
+Hugo;Fuentes;hugofuentes035@example.com;Mno345?&$#@;;0
+Adriana;Cortés;adrianacortes036@example.com;Pqr678?&$#@;;0
+Gonzalo;Molina;gonzalomolina037@example.com;Stu901?&$#@;;0
+Inés;Ortega;inesortega038@example.com;Vwx234.?&$#@;;0
+Oscar;Silva;oscarsilva039@example.com;Yz01.?&$#@;;0
+Camila;Navarro;camilanavarro040@example.com;Abc123!@#;;0
+Simón;González;simongonzalez041@example.com;Def456$#@;;0
+Valeria;Ríos;valeriarios042@example.com;Ghi789?&$#@;;0
+Santiago;Paz;santiagopaz043@example.com;Jkl012.?&$#@;;0
+Alicia;Delgado;aliciadelgado044@example.com;Mno345?&$#@;;0
+Tomás;Castañeda;tomascastañeda045@example.com;Pqr678?&$#@;;0
+Isabella;Sánchez;isabellasanchez046@example.com;Stu901?&$#@;;0
+Mateo;Guzmán;mateoguzman047@example.com;Vwx234.?&$#@;;0
+Lucía;Ortega;luciaortega048@example.com;Yz01.?&$#@;;0
+Manuel;Ramírez;manuelramirez049@example.com;Abc123!@#;;0
+Isabel;Navarro;isabelnavarro050@example.com;Def456$#@;;0
+Héctor;Cortés;hectorcortes051@example.com;Ghi789?&$#@;;0
+Olivia;García;oliviagarcia052@example.com;Jkl012.?&$#@;;0
+Juan;López;juanlopez053@example.com;Mno345?&$#@;;0
+Natalia;Martínez;nataliamartinez054@example.com;Pqr678?&$#@;;0
+Lucas;Hernández;lucashernandez055@example.com;Stu901?&$#@;;0
+Catalina;Gómez;catalinagomez056@example.com;Vwx234.?&$#@;;0
+Sebastián;Rodríguez;sebastianrodriguez057@example.com;Yz01.?&$#@;;0
+Emma;Pérez;emmaperez058@example.com;Abc123!@#;;0
+Benjamín;Gómez;benjamingomez059@example.com;Def456$#@;;0
+Mariana;Torres;marianatorres060@example.com;Ghi789?&$#@;;0
+Pablo;Mendoza;pablomendoza061@example.com;Abc123!@#;;0
+Carolina;Ruiz;carolinaruiz062@example.com;Def456$#@;;0
+Daniel;Santana;danielsantana063@example.com;Ghi789?&$#@;;0
+Valentina;Cruz;valentinacruz064@example.com;Jkl012.?&$#@;;0
+Andrés;Gallardo;andresgallardo065@example.com;Mno345?&$#@;;0
+María;Escobar;mariaescobar066@example.com;Pqr678?&$#@;;0
+Pedro;Rojas;pedrorojas067@example.com;Stu901?&$#@;;0
+Renata;Montoya;renatamontoya068@example.com;Vwx234.?&$#@;;0
+Ignacio;Guzmán;ignacioguzman069@example.com;Yz01.?&$#@;;0
+Laura;Herrera;lauraherrera070@example.com;Abc123!@#;;0
+Fernando;Salazar;fernandosalazar071@example.com;Def456$#@;;0
+Julia;Navarro;julianavarro072@example.com;Ghi789?&$#@;;0
+Mateo;Serrano;mateoserrano073@example.com;Jkl012.?&$#@;;0
+Gabriela;Silva;gabrielasilva074@example.com;Mno345?&$#@;;0
+Felipe;Molina;felipemolina075@example.com;Pqr678?&$#@;;0
+Alejandra;Ortega;alejandraortega076@example.com;Stu901?&$#@;;0
+Diego;Paredes;diegoparedes077@example.com;Vwx234.?&$#@;;0
+Catalina;Castro;catalinacastro078@example.com;Yz01.?&$#@;;0
+Sebastián;Campos;sebastiancampos079@example.com;Abc123!@#;;0
+Isabella;García;isabellagarcia080@example.com;Def456$#@;;0
+José;Mendez;josemendez081@example.com;Ghi789?&$#@;;0
+Camila;Cortez;camilacortez082@example.com;Jkl012.?&$#@;;0
+Matías;Vargas;matiasvargas083@example.com;Mno345?&$#@;;0
+Valeria;Ríos;valeriarios084@example.com;Pqr678?&$#@;;0
+Santiago;Morales;santiagomorales085@example.com;Stu901?&$#@;;0
+Victoria;Hernández;victoriahernandez086@example.com;Vwx234.?&$#@;;0
+Gabriel;Cruz;gabrielcruz087@example.com;Yz01.?&$#@;;0
+María;López;marialopez088@example.com;Abc123!@#;;0
+Benjamín;González;benjamingonzalez089@example.com;Def456$#@;;0
+Renata;Rojas;renatarojas090@example.com;Ghi789?&$#@;;0
+Juan;López;juanlopez091@example.com;Abc123!@#;;0
+María;García;mariagarcia092@example.com;Def456$#@;;0
+Carlos;Martínez;carlosmartinez093@example.com;Ghi789?&$#@;;0
+Laura;Rodríguez;laurarodriguez094@example.com;Jkl012.?&$#@;;0
+Pedro;Herrera;pedroherrera095@example.com;Mno345?&$#@;;0
+Ana;Torres;anatorres096@example.com;Pqr678?&$#@;;0
+Alejandro;Ruiz;alejandroruiz097@example.com;Stu901.?&$#@;;0
+Sofía;Jiménez;sofiajimenez098@example.com;Vwx234.?&$#@;;0
+Luis;Gómez;luisgomez099@example.com;Yz1234.?&$#@;;0
+Elena;Díaz;elenadiaz100@example.com;567Abc.?&$#@;;0
+Jorge;Sánchez;jorgesanchez101@example.com;890Def.?&$#@;;0
+Isabel;Lara;isabellara102@example.com;123Ghi.?&$#@;;0
+Fernando;Cruz;fernandocruz103@example.com;456Jkl.?&$#@;;0
+Mariana;Navarro;mariananavarro104@example.com;789Mno.?&$#@;;0
+Roberto;Ortega;robertoortega105@example.com;012Pqr.?&$#@;;0
+Daniela;Vargas;danielavargas106@example.com;345Stu.?&$#@;;0
+Gustavo;Mendoza;gustavomendoza107@example.com;678Vwx.?&$#@;;0
+Paola;Rojas;paolarojas108@example.com;901Yz.?&$#@;;0
+Ricardo;Gallardo;ricardogallardo109@example.com;234567Abc.?&$#@;;0
+Carmen;Soto;carmensoto110@example.com;890123Def.?&$#@;;0
+Gabriel;Hernández;gabrielhernandez091@example.com;Abc123!@#;Aceite de oliva,Vinagre de vino blanco,Salsa de jalapeño;3
+Valentina;Fernández;valentinafernandez092@example.com;Def456$#@;Vinagre de arroz,Salsa de enchilada,Salsa de tomate;3
+Javier;Ruíz;javierruiz093@example.com;Ghi789?&$#@;Salsa barbacoa,Vino blanco,Carne picada;3
+Camila;Gómez;camilagomez094@example.com;Jkl012.?&$#@;Salsa de queso,Salsa de tamarindo,Langostinos;3
+Diego;Torres;diegotorres095@example.com;Mno345?&$#@;Salsa de chipotle,Cerveza,Salchichas;3
+Lucía;Molina;luciamolina096@example.com;Pqr678?&$#@;Salsa hoisin,Vino tinto,Mejillones;3
+Andrés;Silva;andrésilva097@example.com;Stu901.?&$#@;Salsa de soja,Caldo de pollo,Almejas;3
+Valeria;Rojas;valeriarojas098@example.com;Vwx234.?&$#@;Salsa de chile,Caldo de carne,Calamares;3
+Sebastián;Ortega;sebastianortega099@example.com;Yz1234.?&$#@;Vinagre de manzana,Caldo de pollo,Pulpo;3
+Catalina;Vargas;catalinavargas100@example.com;567Abc.?&$#@;Vinagre balsámico,Huevo,Salsa de tomate;3
+Mateo;Mendez;mateomendez101@example.com;890Def.?&$#@;Leche evaporada,Piña,Salsa de queso;3
+Isabella;Cruz;isabellacruz102@example.com;123Ghi.?&$#@;Crema de leche,Mango,Camarones;3
+Emilia;Herrera;emiliaherrera103@example.com;456Jkl.?&$#@;Leche condensada,Piñones,Salsa de chipotle;3
+Santiago;Lara;santiagolara104@example.com;789Mno.?&$#@;Leche de coco,Nueces,Champán;3
+Sara;González;saragonzalez105@example.com;012Pqr.?&$#@;Yogur,Avellanas,Vino espumoso;3
+Benjamín;Ríos;benjaminrios106@example.com;345Stu.?&$#@;Mayonesa,Pasas,Harina;3
+Victoria;Vega;victoriavega107@example.com;678Vwx.?&$#@;Mostaza,Chocolate negro,Patatas;3
+Ángel;Gutiérrez;angelgutierrez108@example.com;901Yz.?&$#@;Mostaza Dijon,Chocolate con leche,Zanahorias;3
+Natalia;Pérez;nataliaperez109@example.com;234567Abc.?&$#@;Mantequilla de maní,Piña,Salsa de soja;3
+Lucas;Escobar;lucasescobar110@example.com;890123Def.?&$#@;Mantequilla de almendra,Mango,Caldo de pollo;3
+Julia;Pérez;juliaperez091@example.com;Abc123!@#;Vinagre de manzana,Albahaca,Piñones;3
+Adrián;González;adriangonzalez092@example.com;Def456$#@;Salsa de tomate,Almendras,Mostaza;3
+Ana;Santos;anasantos093@example.com;Ghi789?&$#@;Vinagre balsámico,Alcaparras,Pimientos;3
+Pedro;Hernández;pedrohernandez094@example.com;Jkl012.?&$#@;Salsa de soja,Ajo,Caldo de pollo;3
+Carolina;Silva;carolinasilva095@example.com;Mno345?&$#@;Salsa barbacoa,Acelga,Champiñones;3
+Andrés;Martínez;andresmartinez096@example.com;Pqr678?&$#@;Salsa de jalapeño,Anchoas,Cebolla;3
+Laura;Molina;lauramolina097@example.com;Stu901.?&$#@;Salsa de queso,Azúcar,Pepinillos;3
+Gabriel;Vargas;gabrielvargas098@example.com;Vwx234.?&$#@;Salsa de chipotle,Berenjena,Perejil;3
+Valentina;Gómez;valentinagomez099@example.com;Yz1234.?&$#@;Salsa de tamarindo,Cebollino,Pimientos;3
+Santiago;Rojas;santiagorojas100@example.com;567Abc.?&$#@;Salsa de chile,Champán,Piñones;3
+María;Torres;mariatorres101@example.com;890Def.?&$#@;Salsa de enchilada,Chiles en escabeche,Perejil;3
+Carlos;Ortega;carlosortega102@example.com;123Ghi.?&$#@;Salsa de queso,Chirimoya,Pimientos;3
+Daniela;Méndez;danielamendez103@example.com;456Jkl.?&$#@;Salsa de soja,Coliflor,Pepinillos;3
+Javier;Cruz;javiercruz104@example.com;789Mno.?&$#@;Salsa de tomate,Espárragos,Perejil;3
+Fernanda;Herrera;fernandaherrera105@example.com;012Pqr.?&$#@;Salsa de queso,Guisantes,Pimientos;3
+Alejandro;Lara;alejandrolara106@example.com;345Stu.?&$#@;Salsa de chipotle,Hinojo,Piñones;3
+Isabella;Gutiérrez;isabellagutierrez107@example.com;678Vwx.?&$#@;Salsa de chile,Lechuga,Pepinillos;3
+Mariana;Vega;marianavega108@example.com;901Yz.?&$#@;Salsa de tamarindo,Limón,Pimientos;3
+Camilo;Paredes;camiloparedes109@example.com;234567Abc.?&$#@;Salsa de enchilada,Mango,Perejil;3
+Valeria;Ríos;valeriarios110@example.com;890123Def.?&$#@;Salsa de tomate,Melón,Pimientos;3
+Julian;Orozco;julianorozco111@example.com;012345Ghi.?&$#@;Salsa de queso,Nabo,Pepinillos;3
+Luciana;Cortés;lucianacortes112@example.com;678901Jkl.?&$#@;Salsa de soja,Naranja,Pimientos;3
+Diego;Gallardo;diegogallardo113@example.com;234567Mno.?&$#@;Salsa de tomate,Pan,Perejil;3
+Valentina;Villalobos;valentinavillalobos114@example.com;890123Pqr.?&$#@;Salsa de queso,Papa,Pimientos;3
+Matías;Navarro;matiasnavarro115@example.com;456789Stu.?&$#@;Salsa de chipotle,Parmesano,Pepinillos;3
+Daniela;Contreras;danielacontreras116@example.com;0123456Vwx.?&$#@;Salsa de chile,Pasta,Pimientos;3
+Joaquín;Escalante;joaquinescalante117@example.com;789012Yz.?&$#@;Salsa de tamarindo,Patata,Perejil;3
+Valeria;Molina;valeriamolina118@example.com;2345678Abc.?&$#@;Salsa de enchilada,Pepino,Pimientos;3
+Lucas;Cordero;lucascordero119@example.com;9012349Def.?&$#@;Salsa de tomate,Pera,Pepinillos;3
+Mía;Cabrera;miacabrera120@example.com;567890Ghi.?&$#@;Salsa de queso,Pepinillos,Pimientos;3
+Sofía;Hernández;sofiahernandez121@example.com;Abc123!@#;Cebolla,Zanahoria,Tomate;3
+Dylan;González;dylangonzalez122@example.com;Def456$#@;Lechuga,Pepino,Apio;3
+Valentina;Martínez;valentinamartinez123@example.com;Ghi789?&$#@;Pimiento,Rúcula,Espinaca;3
+Sebastián;López;sebastianlopez124@example.com;Jkl012.?&$#@;Cilantro,Pepinillos,Berenjena;3
+Isabella;Torres;isabellatorres125@example.com;Mno345?&$#@;Puerro,Espárragos,Remolacha;3
+Mateo;García;mateogarcia126@example.com;Pqr678?&$#@;Apio,Espinaca,Pepino;3
+Lucía;Silva;luciasilva127@example.com;Stu901.?&$#@;Tomate,Zanahoria,Puerro;3
+Benjamín;Rojas;benjaminrojas128@example.com;Vwx234.?&$#@;Berenjena,Espinaca,Rúcula;3
+Emilia;Vargas;emiliavargas129@example.com;Yz1234.?&$#@;Cebolla,Tomate,Rúcula;3
+Samuel;Molina;samuelmolina130@example.com;567Abc.?&$#@;Remolacha,Pepinillos,Cilantro;3
+Valeria;Herrera;valeriaherrera131@example.com;890Def.?&$#@;Espinaca,Puerro,Cilantro;3
+Matías;Ortega;matiasortega132@example.com;123Ghi.?&$#@;Zanahoria,Rúcula,Berenjena;3
+Luciana;Cruz;lucianacruz133@example.com;456Jkl.?&$#@;Pepinillos,Cilantro,Tomate;3
+Joaquín;Gutiérrez;joaquingutierrez134@example.com;789Mno.?&$#@;Rúcula,Berenjena,Puerro;3
+María;Vega;mariavega135@example.com;012Pqr.?&$#@;Espinaca,Tomate,Pepinillos;3
+Emilio;Gómez;emiliogomez136@example.com;345Stu.?&$#@;Cilantro,Rúcula,Remolacha;3
+Camila;Ríos;camilarios137@example.com;678Vwx.?&$#@;Berenjena,Pepinillos,Zanahoria;3
+Santiago;Paredes;santiagoparedes138@example.com;901Yz.?&$#@;Pepinillos,Espinaca,Tomate;3
+Isabella;Navarro;isabellanavarro139@example.com;234567Abc.?&$#@;Rúcula,Pepinillos,Cebolla;3
+Maximiliano;Cortés;maximilianocortes140@example.com;890123Def.?&$#@;Berenjena,Cebolla,Espinaca;3
+Lucía;Guerrero;luciaguerrero141@example.com;456789Ghi.?&$#@;Pepinillos,Cilantro,Zanahoria;3
+Benjamín;Villalobos;benjaminvillalobos142@example.com;012345Jkl.?&$#@;Cebolla,Remolacha,Pepinillos;3
+Valentina;Muñoz;valentinamunoz143@example.com;678901Mno.?&$#@;Espinaca,Tomate,Zanahoria;3
+Matías;Soto;matiassoto144@example.com;234567Pqr.?&$#@;Pepinillos,Berenjena,Cilantro;3
+Isabella;Campos;isabellacampos145@example.com;890123Stu.?&$#@;Rúcula,Zanahoria,Tomate;3
+Emilio;Herrera;emilioherrera146@example.com;456789Vwx.?&$#@;Cebolla,Pepinillos,Remolacha;3
+Camila;Aguilar;camilaaguilar147@example.com;0123456Yz.?&$#@;Berenjena,Cebolla,Espinaca;3
+Santiago;Ortiz;santiagoortiz148@example.com;789012Abc.?&$#@;Tomate,Pepinillos,Cilantro;3
+Valeria;Delgado;valeriadelgado149@example.com;2345678Def.?&$#@;Rúcula,Berenjena,Pepinillos;3
+Emilia;Paz;emiliapaz150@example.com;9012349Ghi.?&$#@;Pepinillos,Cilantro,Remolacha;3
+Natalia;López;natalialopez@example.com;Natalia123!;Perejil,Zanahoria,Espinaca;3
+Diego;García;diegogarcia@example.com;Diego456$;Lechuga,Cilantro,Pepinillos;3
+Valentina;Ramírez;valentinaramirez@example.com;Valentina789#;Tomate,Pimiento,Rúcula;3
+Sebastián;Martínez;sebastianmartinez@example.com;Sebastian012.?;Puerro,Cebolla,Remolacha;3
+Isabella;Torres;isabellatorres@example.com;Isabella345?;Berenjena,Zanahoria,Tomate;3
+Mateo;Vargas;mateovargas@example.com;Mateo678!;Pepino,Apio,Espinaca;3
+Lucía;Rojas;luciarojas@example.com;Lucia901$;Pimiento,Rúcula,Cilantro;3
+Benjamín;Silva;benjaminsilva@example.com;Benjamin234&;Cebolla,Tomate,Espinaca;3
+Emilia;Molina;emiliamolina@example.com;Emilia567@;Perejil,Pepinillos,Berenjena;3
+Samuel;Herrera;samuelherrera@example.com;Samuel890!;Pimiento,Espárragos,Puerro;3
+Valeria;Gómez;valeriagomez@example.com;Valeria012#;Lechuga,Pepino,Apio;3
+Matías;Cruz;matiascruz@example.com;Matias345?;Tomate,Zanahoria,Espinaca;3
+Luciana;Paredes;lucianaparedes@example.com;Luciana678@;Perejil,Berenjena,Pepinillos;3
+Joaquín;Vega;joaquinvega@example.com;Joaquin901&;Rúcula,Pimiento,Cilantro;3
+María;Ortega;mariaortega@example.com;Maria234!;Cebolla,Espárragos,Remolacha;3
+Emilio;Gutiérrez;emiliogutierrez@example.com;Emilio567#;Pepino,Lechuga,Cilantro;3
+Camila;Navarro;camilanavarro@example.com;Camila890&;Berenjena,Rúcula,Zanahoria;3
+Santiago;Cortés;santiagocortes@example.com;Santiago012@;Pimiento,Pepinillos,Espinaca;3
+Isabella;Guerrero;isabellaguerrero@example.com;Isabella345!;Tomate,Puerro,Cilantro;3
+Maximiliano;Soto;maximilianosoto@example.com;Maximiliano678#;Berenjena,Pepinillos,Espinaca;3
+Lucía;Campos;luciacampos@example.com;Lucia901?;Pimiento,Rúcula,Remolacha;3
+Benjamín;Herrera;benjaminherrera@example.com;Benjamin234@;Cebolla,Pepinillos,Cilantro;3
+Valentina;Villalobos;valentinavillalobos@example.com;Valentina567&;Espinaca,Tomate,Zanahoria;3
+Matías;Muñoz;matiasmunoz@example.com;Matias890#;Pepinillos,Berenjena,Cilantro;3
+Emilia;Delgado;emiliadelgado@example.com;Emilia012.!;Rúcula,Zanahoria,Tomate;3
+Camila;Herrera;camilaherrera@example.com;Camila345@;Cebolla,Pepinillos,Remolacha;3
+Santiago;Aguilar;santiagoaguilar@example.com;Santiago678?;Berenjena,Cebolla,Espinaca;3
+Valeria;Ortiz;valeriaortiz@example.com;Valeria901@;Tomate,Pepinillos,Cilantro;3
+Emilio;Delgado;emiliodelgado@example.com;Emilio234#;Rúcula,Berenjena,Pepinillos;3
+Gabriel;Hernández;gabrielhernandez@example.com;Gabriel123$;Perejil,Zanahoria,Espinaca,Cilantro;4
+Valentina;Gómez;valentinagomez@example.com;Valentina456?;Lechuga,Cilantro,Pepinillos,Rúcula;4
+Sebastián;Torres;sebastiantorres@example.com;Sebastian789!;Tomate,Pimiento,Rúcula,Cebolla;4
+Isabella;Silva;isabellasilva@example.com;Isabella012.?;Puerro,Cebolla,Remolacha,Apio;4
+Mateo;Molina;mateomolina@example.com;Mateo345@;Berenjena,Zanahoria,Tomate,Espinaca;4
+Lucía;García;lucíagarcia@example.com;Lucia678#;Pepino,Apio,Espinaca,Pimiento;4
+Benjamín;Rojas;benjaminrojas@example.com;Benjamin901!;Pimiento,Rúcula,Cilantro,Lechuga;4
+Emilia;Vargas;emiliavargas@example.com;Emilia234?;Cebolla,Tomate,Espinaca,Pepinillos;4
+Samuel;Ramírez;samuelramirez@example.com;Samuel567&;Perejil,Pepinillos,Berenjena,Remolacha;4
+Valeria;Paredes;valeriaparedes@example.com;Valeria890.!;Pimiento,Espárragos,Puerro,Cilantro;4
+Matías;Herrera;matiasherrera@example.com;Matias012$;Lechuga,Pepino,Apio,Espinaca;4
+Luciana;Cruz;lucianacruz@example.com;Luciana345#;Tomate,Zanahoria,Espinaca,Berenjena;4
+Joaquín;Ortega;joaquinortega@example.com;Joaquin678.?;Pepinillos,Rúcula,Cilantro,Pimiento;4
+María;Gutiérrez;mariagutierrez@example.com;Maria901@;Cebolla,Espárragos,Remolacha,Lechuga;4
+Emilio;Navarro;emilionavarro@example.com;Emilio234$;Pepino,Lechuga,Cilantro,Berenjena;4
+Camila;Cortés;camilacortes@example.com;Camila567?;Berenjena,Rúcula,Zanahoria,Tomate;4
+Santiago;Silva;santiagosilva@example.com;Santiago890.!;Pimiento,Pepinillos,Espinaca,Puerro;4
+Isabella;Campos;isabellacampos@example.com;Isabella012@;Tomate,Puerro,Cilantro,Apio;4
+Maximiliano;Aguilar;maximilianoaguilar@example.com;Maximiliano345$;Berenjena,Pepinillos,Espinaca,Cebolla;4
+Lucía;Ortiz;luciaortiz@example.com;Lucia678@;Pimiento,Rúcula,Cilantro,Espárragos;4
+Benjamín;Delgado;benjamindelgado@example.com;Benjamin901&;Pepinillos,Lechuga,Tomate,Cebolla;4
+Valentina;Pérez;valentinaperez@example.com;Valentina234#;Berenjena,Tomate,Rúcula,Cilantro;4
+Sebastián;Herrera;sebastianherrera@example.com;Sebastian567.?;Lechuga,Cebolla,Espinaca,Pepinillos;4
+Isabella;Ramírez;isabellaramirez@example.com;Isabella890@;Pimiento,Pepinillos,Remolacha,Cilantro;4
+Mateo;Gómez;mateogomez@example.com;Mateo012&;Cebolla,Zanahoria,Espinaca,Pepinillos;4
+Emilia;Torres;emiliatorres@example.com;Emilia345$;Rúcula,Tomate,Cilantro,Lechuga;4
+Samuel;Vargas;samuelvargas@example.com;Samuel678@;Pimiento,Espinaca,Berenjena,Remolacha;4
+Valeria;Hernández;valeriahernandez@example.com;Valeria901?;Lechuga,Cilantro,Pepinillos,Rúcula;4
+Matías;Silva;matiassilva@example.com;Matias234!;Puerro,Cebolla,Tomate,Espinaca;4
+Gabriela;Mendoza;gabrielamendoza@example.com;Gabriela123$;Perejil,Zanahoria,Espinaca,Cilantro;4
+Valentín;Fuentes;valentinfuentes@example.com;Valentin456?;Lechuga,Cilantro,Pepinillos,Rúcula;4
+Sofía;Guerrero;sofiaguerrero@example.com;Sofia789!;Tomate,Pimiento,Rúcula,Cebolla;4
+Ismael;Nieto;ismaelnieto@example.com;Ismael012.?;Puerro,Cebolla,Remolacha,Apio;4
+Luciano;Peralta;lucianoperalta@example.com;Luciano345@;Berenjena,Zanahoria,Tomate,Espinaca;4
+Benicia;Vargas;beniciavargas@example.com;Benicia678#;Pepino,Apio,Espinaca,Pimiento;4
+Emilio;Ríos;emiliorios@example.com;Emilio901.!;Pimiento,Rúcula,Cilantro,Lechuga;4
+Mariana;Pérez;mariaperez@example.com;Mariana234?;Cebolla,Tomate,Espinaca,Pepinillos;4
+Santino;Sánchez;santinosanchez@example.com;Santino567&;Perejil,Pepinillos,Berenjena,Remolacha;4
+Valeria;Herrera;valeriaherrera@example.com;Valeria890.!;Pimiento,Espárragos,Puerro,Cilantro;4
+Matías;Vega;matiasvega@example.com;Matias012$;Lechuga,Pepino,Apio,Espinaca;4
+Luciana;Rojas;lucianarojas@example.com;Luciana345#;Tomate,Zanahoria,Espinaca,Berenjena;4
+Joaquín;López;joaquinlopez@example.com;Joaquin678.?;Pepinillos,Rúcula,Cilantro,Pimiento;4
+María;Carrillo;mariacarrillo@example.com;Maria901@;Cebolla,Espárragos,Remolacha,Lechuga;4
+Emilio;Vargas;emiliovargas@example.com;Emilio234$;Pepino,Lechuga,Cilantro,Berenjena;4
+Camila;Lara;camilalara@example.com;Camila567?;Berenjena,Rúcula,Zanahoria,Tomate;4
+Santiago;Cortés;santiagocortes@example.com;Santiago890.!;Pimiento,Pepinillos,Espinaca,Puerro;4
+Isabella;Velasco;isabellavelasco@example.com;Isabella012@;Tomate,Puerro,Cilantro,Apio;4
+Maximiliano;Ortega;maximilianoortega@example.com;Maximiliano345$;Berenjena,Pepinillos,Espinaca,Cebolla;4
+Lucía;Vargas;luciavargas@example.com;Lucia678@;Pimiento,Rúcula,Cilantro,Pepino;4
+Sebastián;López;sebastianlopez@example.com;Sebastian901&;Apio,Espinaca,Pepinillos,Berenjena;4
+Valentina;Pineda;valentinapineda@example.com;Valentina234#;Pimiento,Cebolla,Tomate,Espinaca;4
+Alejandro;Soto;alejandrosoto@example.com;Alejandro567.?;Pepinillos,Lechuga,Tomate,Cilantro;4
+Martina;Olivares;martaolivares@example.com;Martina890@;Berenjena,Tomate,Rúcula,Cilantro;4
+Emmanuel;Herrera;emmanuelherrera@example.com;Emmanuel012&;Lechuga,Cebolla,Espinaca,Pepinillos;4
+Rodrigo;Mendoza;rodrigomendoza@example.com;Rodrigo123$;Perejil,Zanahoria,Espinaca,Cilantro;4
+Valentina;Fuentes;valentinafuentes@example.com;Valentina456?;Lechuga,Cilantro,Pepinillos,Rúcula;4
+Isabella;Guerrero;isabellaguerrero@example.com;Isabella789!;Tomate,Pimiento,Rúcula,Cebolla;4
+Lucas;Nieto;lucasnieto@example.com;Lucas012.?;Puerro,Cebolla,Remolacha,Apio;4
+Elena;Peralta;elenaperalta@example.com;Elena345@;Berenjena,Zanahoria,Tomate,Espinaca;4
+Gabriela;Vargas;gabrielavargas@example.com;Gabriela678#;Pepino,Apio,Espinaca,Pimiento;4
+Maximiliano;Ríos;maximilianorios@example.com;Maximiliano901.!;Pimiento,Rúcula,Cilantro,Lechuga;4
+Camila;Pérez;camilaperez@example.com;Camila234?;Cebolla,Tomate,Espinaca,Pepinillos;4
+Santiago;Sánchez;santiagosanchez@example.com;Santiago567&;Perejil,Pepinillos,Berenjena,Remolacha;4
+Valeria;Herrera;valeriaherrera@example.com;Valeria890.!;Pimiento,Espárragos,Puerro,Cilantro;4
+Matías;Vega;matiasvega@example.com;Matias012$;Lechuga,Pepino,Apio,Espinaca;4
+Luciana;Rojas;lucianarojas@example.com;Luciana345#;Tomate,Zanahoria,Espinaca,Berenjena;4
+Joaquín;López;joaquinlopez@example.com;Joaquin678.?;Pepinillos,Rúcula,Cilantro,Pimiento;4
+María;Carrillo;mariacarrillo@example.com;Maria901@;Cebolla,Espárragos,Remolacha,Lechuga;4
+Emilio;Vargas;emiliovargas@example.com;Emilio234$;Pepino,Lechuga,Cilantro,Berenjena;4
+Daniela;Lara;danielalara@example.com;Daniela567?;Berenjena,Rúcula,Zanahoria,Tomate;4
+Sebastián;Cortés;sebastiancortes@example.com;Sebastian890.!;Pimiento,Pepinillos,Espinaca,Puerro;4
+Isabella;Velasco;isabellavelasco@example.com;Isabella012@;Tomate,Puerro,Cilantro,Apio;4
+Liam;Ortega;liamortega@example.com;Liam345$;Berenjena,Pepinillos,Espinaca,Cebolla;4
+Lucía;Vargas;luciavargas@example.com;Lucia678@;Pimiento,Rúcula,Cilantro,Lechuga;4
+Julián;Peña;julianpena@example.com;Julian901?;Cebolla,Remolacha,Tomate,Espinaca;4
+Valentina;Mendoza;valentinamendoza@example.com;Valentina234#;Pepinillos,Cilantro,Espinaca,Berenjena;4
+Sofía;Aguilar;sofiaaguilar@example.com;Sofia567.!;Tomate,Zanahoria,Espinaca,Pepino;4
+Benjamín;Gómez;benjamingomez@example.com;Benjamin890&;Pimiento,Cilantro,Pepinillos,Lechuga;4
+Valeria;Vera;valeriavera@example.com;Valeria012?;Cebolla,Tomate,Espinaca,Pimiento;4
+Andrés;López;andreslopez@example.com;Andres123@;Lechuga,Pimiento,Espinaca,Pepinillos,Berenjena;5
+María;Santos;mariasantos@example.com;Maria456#;Tomate,Zanahoria,Espinaca,Berenjena,Cilantro;5
+Juan;Hernández;juanhernandez@example.com;Juan789.?;Pepino,Apio,Espinaca,Pimiento,Lechuga;5
+Carolina;Torres;carolinatorres@example.com;Carolina012$;Cebolla,Tomate,Espinaca,Pepinillos,Remolacha;5
+Diego;Vargas;diegovargas@example.com;Diego345!;Perejil,Pepinillos,Remolacha,Lechuga,Cilantro;5
+Valentina;Mendoza;valentinamendoza@example.com;Valentina678@;Pimiento,Espárragos,Espinaca,Puerro,Lechuga;5
+Sebastián;González;sebastiangonzalez@example.com;Sebastian901&;Cebolla,Remolacha,Tomate,Espinaca,Berenjena;5
+Laura;Herrera;lauraherrera@example.com;Laura234.!;Pepinillos,Rúcula,Cilantro,Pimiento,Lechuga;5
+Daniel;Ríos;danielrios@example.com;Daniel567$;Tomate,Pepinillos,Cilantro,Lechuga,Berenjena;5
+Camila;Silva;camilasilva@example.com;Camila890?;Pimiento,Lechuga,Cilantro,Espinaca,Berenjena;5
+Santiago;Guerrero;santiagoguerrero@example.com;Santiago012.!;Cebolla,Pepinillos,Rúcula,Cilantro,Tomate;5
+Valeria;Ortega;valeriaortega@example.com;Valeria345#;Berenjena,Pepinillos,Remolacha,Lechuga,Cilantro;5
+José;Cortés;josecortes@example.com;Jose678@;Pimiento,Cilantro,Rúcula,Pepinillos,Lechuga;5
+Isabella;Vargas;isabellavargas@example.com;Isabella901&;Cebolla,Lechuga,Cilantro,Espinaca,Pimiento;5
+Lucas;Nieto;lucasnieto@example.com;Lucas234.?;Tomate,Pepinillos,Espinaca,Berenjena,Cilantro;5
+Ana;Paredes;anaparedes@example.com;Ana567.!;Pimiento,Espinaca,Cilantro,Pepinillos,Lechuga;5
+Elena;Vega;elenavega@example.com;Elena890@;Cebolla,Remolacha,Tomate,Espinaca,Berenjena;5
+Gabriel;Rojas;gabrielrojas@example.com;Gabriel012&;Pepinillos,Rúcula,Cilantro,Pimiento,Lechuga;5
+Valentina;Gómez;valentinagomez@example.com;Valentina345#;Tomate,Lechuga,Cilantro,Espinaca,Berenjena;5
+Alejandro;Lara;alejandrolara@example.com;Alejandro678.!;Pimiento,Cebolla,Pepinillos,Lechuga,Cilantro;5
+María;Pérez;mariaperez@example.com;Maria901?;Cebolla,Tomate,Pepinillos,Espinaca,Berenjena;5
+Juan;Cabrera;juancabrera@example.com;Juan234@;Lechuga,Pimiento,Cilantro,Pepinillos,Remolacha;5
+Carolina;Castillo;carolinacastillo@example.com;Carolina567&;Tomate,Zanahoria,Espinaca,Berenjena,Cilantro;5
+Diego;Rivas;diegorivas@example.com;Diego890.!;Pepino,Apio,Espinaca,Pimiento,Lechuga;5
+Valentina;Paz;valentinapaz@example.com;Valentina012$;Cebolla,Tomate,Espinaca,Pepinillos,Remolacha;5

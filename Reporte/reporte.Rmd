@@ -1,6 +1,6 @@
 ---
 title: "Reporte: minería de datos sobre alergias de usuarios de un sistema web de recetas"
-author: "W, X, Y, Z"
+author: "Arnold Torres Maldonado, Héctor Isaac Román Vásquez, Jesús Eduardo Guijarro Saldaña, Omar Montoya Romero"
 date: "`r Sys.Date()`"
 output: pdf_document
 ---
@@ -11,12 +11,17 @@ knitr::opts_chunk$set(echo = TRUE)
 ## Resumen
 En este reporte se plasma el proceso de análisis de los datos de un sistema web desarrollado por los autores del documento con los objetivos de identificar cual es la alergia más repetida y el número de alergias más común, así como hacer uso de las herramientas de regresión lineal y el algoritmo KNN para observar las diferencias entre los mismos. Se concluye que X es la herramienta más precisa, la alergia más repetida es Y y el número de alergias más común es Z.
 ## Introducción
-
-## Métodos
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+## Marco teórico
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+## Materiales y métodos
 Uso de regresión lineal
 Uso del algoritmo KNN
-
-
+Uso de crisp dm
+## Conclusiones
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+## Referencias
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 ## Including Plots
 
 You can also embed plots, for example:

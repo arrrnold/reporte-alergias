@@ -1,5 +1,5 @@
 # Cargar el dataset
-data <- read.csv("prueba.csv", sep=";")
+data <- read.csv("usuarios.csv", sep=";")
 
 # Calcular la frecuencia de las alergias
 
@@ -19,5 +19,5 @@ alergias_ordenadas <- sort(tabla_de_frecuencia, decreasing = TRUE)
 alergia_mas_comun <- names(alergias_ordenadas)[1] # alergia ubicada en el #1
 
 # Imprimir el resultado
-cat("La alergia más común es:", alergia_mas_comun)
+cat("La alergia mÃ¡s comÃºn es:", alergia_mas_comun)
 

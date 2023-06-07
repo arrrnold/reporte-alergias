@@ -21,3 +21,5 @@ alergia_mas_comun <- names(alergias_ordenadas)[1] # alergia ubicada en el #1
 # Imprimir el resultado
 cat("La alergia más común es:", alergia_mas_comun)
 
+# graficar
+plot(alergias_ordenadas)

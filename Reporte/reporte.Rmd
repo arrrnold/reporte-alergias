@@ -18,6 +18,25 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 Uso de regresión lineal
 Uso del algoritmo KNN
 Uso de crisp dm
+## Experimentación y resultados
+### Comprensión del problema
+Se trata de un análisis de datos llevado a cabo usando tablas de frecuencia de regresión lineal y del algoritmo KNN usando el conjunto de datos del sistema web de recetas.
+### Entendimiento de los datos
+Tenemos un conjunto de datos con 7 variables las cuales son:
+- Names: los nombres de los usuarios registrados en el sistema.
+- lastNames: los apellidos de dichos usuarios.
+- email: correo electrónico de los usuarios.
+- password: contraseña de los usuarios.
+- alergias: ingredientes a los que cada usuario es alérgico.
+- numero_alergias: número de ingredientes a los que el usuario es alérgico.
+### Preparación de los datos
+En el archivo CSV las columnas del dataset estaban separadas por punto y coma y los ingredi: Names;lastNames;email;password;alergias;numero_alergias
+Valeria;Flores;valeriaflores117@example.com;Vwx234@#$;Camarones, Aceitunas;2
+
+### Modelado
+algo
+### Resultados del modelo
+algo
 ## Conclusiones
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 ## Referencias

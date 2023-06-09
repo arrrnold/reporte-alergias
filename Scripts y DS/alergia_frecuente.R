@@ -16,10 +16,10 @@ tabla_de_frecuencia <- table(ingredientes)
 # ordenar de menor a mayor las frecuencias
 alergias_ordenadas <- sort(tabla_de_frecuencia, decreasing = TRUE)
 
-alergia_mas_comun <- names(alergias_ordenadas)[1] # alergia ubicada en el #1
+alergia_mas_comun <- names(alergias_ordenadas)[1:5] # alergia ubicada en el #1
 
 # Imprimir el resultado
-cat("La alergia mÃ¡s comÃºn es:", alergia_mas_comun)
+cat("La alergia más común es:", alergia_mas_comun)
 
 # graficar
 plot(alergias_ordenadas)

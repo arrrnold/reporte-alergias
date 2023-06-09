@@ -8,6 +8,6 @@ frecuencia <- table(num_alergias)
 frecuencia_num_ordenadas <- sort(frecuencia,decreasing = TRUE)
 # elegir la alergia #1
 num_alergia_mas_frecuente <- names(frecuencia_num_ordenadas)[1]
-# imprimir soluciÃ³n
+# imprimir solución
 plot(frecuencia)
-cat("Es mÃ¡s comÃºn que los usuarios tengan", num_alergia_mas_frecuente, "alergias")
+cat("Es más común que los usuarios tengan", num_alergia_mas_frecuente, "alergias")

@@ -8,64 +8,111 @@ output: pdf_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-## Resumen
+
+# Resumen
+
 En este reporte se plasma el proceso de análisis de los datos de un sistema web desarrollado por los autores del documento con los objetivos de identificar cual es la alergia más repetida y el número de alergias más común, así como hacer uso de las herramientas de regresión lineal y el algoritmo KNN para observar las diferencias entre los mismos. Se concluye que X es la herramienta más precisa, la alergia más repetida es Y y el número de alergias más común es Z.
-## Introducción
+
+# Introducción
+
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-## Marco teórico
+
+# Marco teórico
+
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-## Materiales y métodos
+
+# Materiales y métodos
+
 Uso de regresión lineal
+
 Uso del algoritmo KNN
+
 Uso de crisp dm
-## Experimentación y resultados
-### Comprensión del problema
+
+# Experimentación y resultados
+
+## Comprensión del problema
+
 Se trata de un análisis de datos llevado a cabo usando tablas de frecuencia de regresión lineal y del algoritmo KNN usando el conjunto de datos del sistema web de recetas.
-### Entendimiento de los datos
+
+## Entendimiento de los datos
+
 Usamos un conjunto de datos con 7 variables las cuales eran:
-- Names: los nombres de los usuarios registrados en el sistema.
-- lastNames: los apellidos de dichos usuarios.
-- email: correo electrónico de los usuarios.
-- password: contraseña de los usuarios.
-- alergias: ingredientes a los que cada usuario era alérgico.
-- numero_alergias: número de ingredientes a los que el usuario era alérgico.
-### Preparación de los datos
+
+\- Names: los nombres de los usuarios registrados en el sistema.
+
+\- lastNames: los apellidos de dichos usuarios.
+
+\- email: correo electrónico de los usuarios.
+
+\- password: contraseña de los usuarios.
+
+\- alergias: ingredientes a los que cada usuario era alérgico.
+
+\- numero_alergias: número de ingredientes a los que el usuario era alérgico.
+
+## Preparación de los datos
+
 El archivo CSV que contenía los datos tenía las columnas separadas por punto y coma y los ingredientes estaban separados por comas de la siguiente manera:
-`Names;lastNames;email;password;alergias;numero_alergias`
-`Valeria;Flores;valeriaflores117@example.com;Vwx234@#$;Camarones, Aceitunas;2`
-por lo tanto para hacer los análisis correspondientes importamos dicho archivo especificando el caracter que separaba las columnas con la línea de código siguiente:
+
+``` csv
+Names;lastNames;email;password;alergias;numero_alergias
+Valeria;Flores;valeriaflores117@example.com;Vwx234@#$;Camarones, Aceitunas;2
 ```
+
+Por lo tanto para hacer los análisis correspondientes importamos dicho archivo especificando el caracter que separaba las columnas con la línea de código siguiente:
+
+```{r}
 data <- read.csv("usuarios.csv", sep=";")
 ```
+
+## Modelado
+
+### Encontrando la alergia más frecuente
+
 Para encontrar la alergia más frecuente hicimos un vector que contenía todos los ingredientes repetidos.
-```
+
+```{r}
 # strsplit para dividir los nombres separados por coma
 # en elementos individuales
-
 ingredientes_separados <- strsplit(data$alergias, ",")
-
 # unlist para crear un vector para poner los nombres separados
 ingredientes <- unlist(ingredientes_separados)
 ```
 
-### Modelado
-#### Encontrando la alergia más frecuente
 Para empezar realizamos una tabla de frecuencias para los ingredientes que nos permitió observar cuáles se repetían más, después esta tabla se ordenó de manera descendente según su frecuencia para después tomar el valor en la posición número 1, por último se imprime el resultado.
-```
+
+```{r}
+# Cargar el dataset
+data <- read.csv("usuarios.csv", sep=";")
+
 # Calcular la frecuencia de las alergias
+# strsplit para dividir los nombres separados por coma
+# en elementos individuales
+ingredientes_separados <- strsplit(data$alergias, ",")
+
+# unlist para crear un vector para poner los nombres separados
+ingredientes <- unlist(ingredientes_separados)
 tabla_de_frecuencia <- table(ingredientes)
-# ordenar de menor a mayor las frecuencias
+
+# ordenar de mayor a menor las frecuencias
 alergias_ordenadas <- sort(tabla_de_frecuencia, decreasing = TRUE)
 alergia_mas_comun <- names(alergias_ordenadas)[1] # alergia ubicada en el #1
-# Imprimir el resultado
+
+# Mostrar el resultado
+plot(alergias_ordenadas[1:5], xlab="Ingrediente",
+     ylab="Frecuencia", ylim=c(0,100))
 cat("La alergia más común es:", alergia_mas_comun)
 ```
-```{r pressure, echo=FALSE}
-plot(alergias_ordenadas)
-```
-#### Encontrando el número de alergias más 
+
+### Encontrando el número de alergias más frecuente
+
 Para esta sección también se hizo uso de una tabla de frecuencias que ordenamos de manera descendente según el número de veces que se repetía una cantidad de alergias. De nueva cuenta se seleccionó el valor en la posición número 1 para después imprimir el resultado.
-```
+
+```{r}
+# Cargar el dataset
+data <- read.csv("usuarios.csv", sep=";")
+# elegir la columna numero_alergias del DS
 num_alergias <- data$numero_alergias
 # tabla de frecuencias de los numeros de alergias
 frecuencia <- table(num_alergias)
@@ -73,27 +120,26 @@ frecuencia <- table(num_alergias)
 frecuencia_num_ordenadas <- sort(frecuencia,decreasing = TRUE)
 # elegir la alergia #1
 num_alergia_mas_frecuente <- names(frecuencia_num_ordenadas)[1]
+
 # imprimir solución
 cat("Es más común que los usuarios tengan", num_alergia_mas_frecuente, "alergias")
-```
-```{r pressure, echo=FALSE}
-plot(num_alergia_mas_frecuente)
+
+# Agregar etiquetas de texto encima de las barras
+text(plot(frecuencia,ylab="Frecuencia",xlab="Número de alergias"), frecuencia, labels = frecuencia, pos = 3, cex = 0.8)
 ```
 
-#### Uso del algoritmo KNN
-#### Uso de la técnica de regresión lineal
-### Resultados del modelo
+### Uso del algoritmo KNN
+
+### Uso de la técnica de regresión lineal
+
+## Resultados del modelo
+
 algo
-## Conclusiones
+
+# Conclusiones
+
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-## Referencias
+
+# Referencias
+
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

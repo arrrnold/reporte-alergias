@@ -1,11 +1,9 @@
 # Cargar paquetes necesarios
 library(class)
 
-# Crear el dataframe de datos
-data <- data.frame(
-  alergias = c("Huevo", "Cacahuetes", "Nueces", "Almendras", "Soya"),
-  numero_alergias = c(1, 1, 1, 1, 1)
-)
+# Cargar el dataset
+data <- read.csv("usuarios.csv", sep=";")
+# elegir la columna numero_alergias del DS
 
 # Dividir los datos en conjunto de entrenamiento y conjunto de prueba
 set.seed(123)

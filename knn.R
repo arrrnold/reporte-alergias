@@ -1,14 +1,29 @@
-# ejemplo de knn con mas datos usando el DS "iris"
-# bibliotecas
+# Cargar paquetes necesarios
 library(class)
-library(datasets)
-library(ggplot2)
-library(GGally)
-# cargar DS
-data(iris)
-ds_alergias_ordenadas <- read.csv("alergias_ordenadas.csv",sep=";")
 
-ggpairs(ds_alergias_ordenadas,columns = (1))
+# Crear el dataframe de datos
+data <- data.frame(
+  alergias = c("Huevo", "Cacahuetes", "Nueces", "Almendras", "Soya"),
+  numero_alergias = c(1, 1, 1, 1, 1)
+)
 
-ggplot(data = ds_alergias_ordenadas, aes(x = X, y = Freq, col = Freq)) +
-  geom_point()
+# Dividir los datos en conjunto de entrenamiento y conjunto de prueba
+set.seed(123)
+train_indices <- sample(1:nrow(data), size = 0.7 * nrow(data), replace = FALSE)
+train_data <- data[train_indices, ]
+test_data <- data[-train_indices, ]
+
+# Entrenar el modelo KNN
+k <- 1  # Número de vecinos cercanos
+knn_model <- knn(
+  train = as.matrix(train_data[, "numero_alergias"]),
+  test = as.matrix(test_data[, "numero_alergias"]),
+  cl = train_data[, "alergias"],
+  k = k
+)
+
+# Imprimir las predicciones
+cat("Predicciones del modelo KNN:\n")
+print(knn_model)
+
+plot(knn_model)

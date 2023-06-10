@@ -1,4 +1,4 @@
-Names;lastNames;email;password;alergias;numero_alergias
+Names;lastNames;email;alergias;numero_alergias
 Juan;Gómez;juangomez1@example.com;Abc123!@;Huevo;1
 María;García;mariagarcia2@example.com;Def456$#;Cacahuetes;1
 Carlos;Hernández;carloshernandez3@example.com;Ghi789?&;Nueces;1

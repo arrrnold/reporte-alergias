@@ -3,7 +3,13 @@ library(class)
 
 # Cargar el dataset
 data <- read.csv("usuarios.csv", sep=";")
-# elegir la columna numero_alergias del DS
+
+# Reemplazar campos vacíos con NA
+data[data == ""] <- NA
+
+# Imputación por la media
+mean_vals <- colMeans(data[, "numero_alergias"], na.rm = TRUE)
+data[, "numero_alergias"] <- ifelse(is.na(data[, "numero_alergias"]), mean_vals, data[, "numero_alergias"])
 
 # Dividir los datos en conjunto de entrenamiento y conjunto de prueba
 set.seed(123)

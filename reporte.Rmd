@@ -1,17 +1,36 @@
 ---
-title: "Reporte: minería de datos sobre alergias de usuarios de un sistema web de recetas"
-author: "Jesus, Hector, Arnold, Omar"
-date: "`r Sys.Date()`"
+title: "Proyecto final Análisis de alergias de usuarios de un recetario web"
+author: 
+- "INSTITUTO POLITÉCNICO NACIONAL"
+
+
+- "-----------------------------------------------------------"
+- "Alumno: Hector Isaac Roman Vazquez ------------ Boleta: 2021670099 " 
+- "Alumno: Jesús Eduardo Guijarro Saldaña -------- Boleta: 2021670220 " 
+- "Alumno: Omar Montoya Romero ------------------- Boleta: 2021670251 "
+- "Alumno: Arnold Torres Maldonado ---------------- Boleta: 2021670117 "
+- "-----------------------------------------------------------"
+
+
+- "Docente: Hector Alejandro Acuña Cid"
+
+
+date: "16 de Junio del 2023"
 output: pdf_document
+header-includes: 
+- \renewcommand{\and}{\\}
 ---
+
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+# Abstract
+This report reflects the data analysis process of a web system developed by the authors of the document with the objective of identifying which is the allergy that is most repeated, as well as the number of most common allergies, in the same way makes use of the linear regression tools and the KNN algorithm to make a comparison between the results obtained from both methods and this, conclude that X is the most accurate tool, the most repeated allergy is to pickles and the number of most common allergies It's zero allergies.
 
 # Resumen
 
-En este reporte se plasma el proceso de análisis de los datos de un sistema web desarrollado por los autores del documento con los objetivos de identificar cual es la alergia mndefinedás repetida y el número de alergias más común, así como hacer uso de las herramientas de regresión lineal y el algoritmo KNN para observar las diferencias entre los mismos. Se concluye que X es la herramienta más precisa, la alergia más repetida es a los pepinillos y el número de alergias más común es cero alergias.
+En este reporte se plasma el proceso de análisis de los datos de un sistema web desarrollado por los autores del documento, Con los objetivos de identificar cual es la alergia que mas se logra repetir, asi como el número de alergias más común, de igual manera se hace uso de las herramientas de regresión lineal y el algoritmo KNN para realizar una comparacion entre los resultados obtenidos de ambos metodos y asi, concluir que X es la herramienta más precisa, la alergia más repetida es a los pepinillos y el número de alergias más común es cero alergias.
 
 # Introducción
 
@@ -38,6 +57,8 @@ Una alergia es una reacción de su sistema inmunitario hacia algo que no molesta
 Las alergias pueden provocar una serie de síntomas como goteos nasales, estornudos, picazón, sarpullidos, edema (hinchazón) o asma. Las alergias van de leves a severas. Una reacción severa llamada anafilaxia puede resultar fatal. Los médicos usan pruebas de piel y sangre para diagnosticar las alergias. Los tratamientos incluyen medicinas, inyecciones y evitar las sustancias que causan las alergias. [4]
 
 Una alergia alimentaria es una reacción del sistema inmunitario que ocurre poco después de haber ingerido un determinado alimento. Incluso una pequeña cantidad del alimento que causa la alergia puede ocasionar signos y síntomas, como problemas digestivos, urticaria o inflamación de las vías respiratorias. En algunos casos, una alergia alimentaria puede ocasionar síntomas graves o, incluso, una reacción que puede poner en riesgo la vida, llamada anafilaxia. [5]
+
+![ Aleriga alimentaria.](D:/Escritorio/IPN Upiiz/6ª Semestre/Mineria de datos/reporte/ALERGI.jpg){width=30%}
 
 Se calcula que la alergia alimentaria afecta al 8 por ciento de los niños menores de 5 años y hasta al 4 por ciento de los adultos. A pesar de que no existe cura, algunos niños superan sus alergias alimentarias cuando crecen. [5]
 
@@ -68,24 +89,88 @@ Existen cuatro tipos de Datasets catalogados según su origen y formato, los cua
 
 Para la investigación se usó el lenguaje de programación R, R es un lenguaje de programación estadística ampliamente utilizado para análisis de datos, modelado estadístico y visualización. Es una plataforma gratuita y de código abierto que ofrece una amplia gama de herramientas y paquetes especializados para el procesamiento y análisis de datos. RStudio, por otro lado, es un entorno de desarrollo integrado (IDE) diseñado específicamente para trabajar con R. Proporciona una interfaz gráfica fácil de usar que facilita la escritura, ejecución y depuración de código en R. RStudio también ofrece características adicionales como paneles de visualización, administración de proyectos y colaboración en línea, lo que lo convierte en una herramienta popular entre los usuarios de R [8].
 
+![ Modelo CRISP-DM.](D:/Escritorio/IPN Upiiz/6ª Semestre/Mineria de datos/reporte/CRISP-DM.png){width=30%}
+
 Para desarrollar el modelo de regresión lineal hicimos uso de la metodología Cross Industry Standard Process for Data Mining (CRISP-DM por sus siglas), esta es una metodología para la minería de datos que se utiliza comúnmente en el análisis de datos empresariales. La metodología consta de seis fases [6]:
 
-1.  Comprensión del problema: esta fase inicia por comprender los requisitos y objetivos del proyecto para establecer un contexto.
-2.  Entendimiento de los datos: consiste en explorar y analizar los datos disponibles para obtener una comprensión detallada de su contenido, calidad y estructura.
-3.  Preparación de los datos: fase donde se realizan tareas de limpieza, transformación y selección de datos para garantizar la calidad y adecuación de los mismos para el análisis.
-4.  Modelado: periodo de aplicar técnicas de minería de datos y construir modelos predictivos o descriptivos utilizando algoritmos apropiados.
-5.  Evaluación: fase para poner a prueba el rendimiento y la eficacia de los modelos construidos mediante métricas y pruebas para verificar su validez y precisión.
-6.  Despliegue: donde se implementan los resultados y las conclusiones del proyecto en el entorno.
+***Comprensión del negocio***
+
+El objetivo de esta fase es alinear los objetivos del proyecto de data mining con los objetivos del negocio. Tratando así de evitar embarcarnos en un proyecto de minería de datos que no produzca ningún efecto real en la organización.
+
+En esta fase deberemos ser capaces de:
+
+- Establecer los objetivos de negocio.
+- Evaluar la situación actual.
+- Fijar los objetivos a nivel de minería de datos.
+- Obtener un plan de proyecto.
+
+***Comprensión de los datos***
+
+Dos puntos clave en esta fase: conocer los datos, estructura y distribución, y la calidad de estos.
+
+En esta fase deberemos ser capaces de:
+
+- Ejecutar procesos de captura de datos.
+- Proporcionar una descripción del juego de datos.
+- Realizar tareas de exploración de datos.
+- Gestionar la calidad de los datos, identificando problemas y proporcionando - - soluciones.
+
+***Preparación de los datos***
+
+El objetivo final de esta fase es obtener los datos finales sobre los que aplicarán los modelos.
+
+En esta fase deberemos ser capaces de:
+
+- Establecer el universo de datos con los que trabajar.
+- Realizar tareas de limpieza de datos.
+- Construir un juego de datos apto para ser usado en modelos de minería de - - - datos.
+- Integrar datos de fuentes heterogéneas si es necesario.
+
+***Modelado***
+
+El objetivo último de esta fase es construir un modelo que nos permita alcanzar los objetivos del proyecto.
+
+En esta fase deberemos ser capaces de:
+
+- Seleccionar las técnicas de modelado más adecuadas para nuestro juego de datos y nuestros objetivos.
+- Fijar una estrategia de verificación de la calidad del modelo.
+- Construir un modelo a partir de la aplicación de las técnicas seleccionadas sobre el juego de datos.
+- Ajustar el modelo evaluando su fiabilidad y su impacto en los objetivos anteriormente establecidos.
+
+***Evaluación del modelo***
+
+En esta fase se centra en evaluar el grado de acercamiento del modelo a los objetivos.
+
+En esta fase deberemos ser capaces de:
+
+- Evaluar el modelo o modelos generados hasta el momento.
+- Revisar todo el proceso de minería de datos que se ha llevado hasta este punto.
+- Establecer los siguientes pasos a tomar, tanto si se trata de repetir fases anteriores como si se trata de abrir nuevas líneas de investigación.
+
+***Implementación***
+
+El objetivo de esta fase es realizar la implementación de los resultados obtenidos de forma que sea propagado a los usuarios finales así como el mantenimiento de este una vez la implementación haya finalizado.
+
+En esta fase deberemos ser capaces de:
+
+- Diseñar un plan de despliegue de modelos y conocimiento sobre nuestra organización.
+- Realizar seguimiento y mantenimiento de la parte más operativa del despliegue.
+- Revisar el proyecto en su globalidad con el objetivo de identiﬁcar lecciones aprendidas. [9]
+
 
 Por otra parte, la regresión lineal es una técnica conocida de modelado estadístico que se utiliza para analizar la relación entre dos variables continuas. Se utiliza para predecir el valor de una variable dependiente a partir del valor de una o más variables independientes, esta asume que la relación entre las variables es lineal, lo que significa que el cambio en la variable independiente tiene un cambio proporcional en la variable dependiente. Una forma de aplicar la regresión lineal es mediante el método de mínimos cuadrados, este es un método matemático utilizado para encontrar una línea de regresión que mejor se ajusta a los datos [7]. El objetivo del método es minimizar la suma de los cuadrados de las diferencias entre los valores observados y los valores predichos por la línea de regresión.
+
+![ Modelo CRISP-DM.](D:/Escritorio/IPN Upiiz/6ª Semestre/Mineria de datos/reporte/Regresion.png){width=30%}
 
 El conjunto de datos que se analizó proviene de un sistema web de recetas donde los usuarios se dan de alta y especifican los ingredientes a los cuales son alérgicos, el sistema los guarda en una base de datos es ahí de donde nosotros obtuvimos el conjunto para trabajar.
 
 # Experimentación y resultados
 
 ## Comprensión del problema
+Se genera una comparacion entre los resultados que se pueden obtener de el analisis de usuarios con distintas alergias por medio de regresion lineal haciendo uso de la metodologia CRISP-DM, haci como el analisis por medio de knn de igual manera utilizando el mismo metodo de CRISP-DM.
 
-Se trata de un análisis de datos llevado a cabo usando tablas de frecuencia de regresión lineal y del algoritmo KNN usando el conjunto de datos del sistema web de recetas.
+Dichos datos se obtienen utilizando un conjunto de datos obtenidos mendiante un sistema web, el sistema consta de un recetario, donde una vez que se ingresa a la plataforma, el usuario puede seleccionar si se tienen alergias a algun alimento, dichos datos se almacenan en una base de datos y de ahi es posible que nosotros los extraigamos en un dataset para poder realizar el analisis.
+
 
 ## Entendimiento de los datos
 

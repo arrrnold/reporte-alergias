@@ -1,3 +1,8 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
 ### Uso de regresión lineal y KNN
 
 El modelo de regresión lineal generado arrojó un ajuste de $R^2$ de 0.7 lo que indica que el data frame usado contenía una muestra suficiente de datos para lograr la predicción propuesta. 

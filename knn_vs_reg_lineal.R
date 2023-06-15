@@ -1,7 +1,8 @@
 library(class)
 
 # Cargar el dataset
-data <- read.csv("usuarios.csv", sep=";")
+data <- read.csv("D:/Escritorio/IPN Upiiz/6ª Semestre/Mineria de datos/reporte/usuarios.csv", sep=";")
+
 # elegir la columna numero_alergias del DS
 num_alergias <- data$numero_alergias
 # tabla de frecuencias de los numeros de alergias
@@ -46,7 +47,7 @@ cat("Predicción usando KNN para numero_de_alergias =", numero_de_alergias-1, ":
 
 # Graficar los resultados
 plot(datos$num_alergias, datos$Freq, main = "Comparación Regresión Lineal vs. KNN", 
-     xlab = "Número de usuarios", ylab = "Número de alergias")
+     xlab = "Número de alergias", ylab = "Número de usuarios")
 abline(modelo_rl, col = "blue")
 points(numero_de_alergias, prediccion_rl, col = "purple", pch = 16)
 points(prediccion_knn, numero_de_alergias, col = "green", pch = 16)

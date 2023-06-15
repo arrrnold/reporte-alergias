@@ -1,57 +1,14 @@
+# ejemplo de knn con mas datos usando el DS "iris"
+# bibliotecas
 library(class)
+library(datasets)
+library(ggplot2)
+library(GGally)
+# cargar DS
+data(iris)
+ds_alergias_ordenadas <- read.csv("alergias_ordenadas.csv",sep=";")
 
-# Cargar el dataset
-data <- read.csv("usuarios.csv", sep=";")
-# elegir la columna numero_alergias del DS
-num_alergias <- data$numero_alergias
-# tabla de frecuencias de los numeros de alergias
-frecuencia_num_alergias <- table(num_alergias)
-# ordenar frecuencias de la tabla de manera descendente
-frecuencia_num_alergias_ordenadas <- sort(frecuencia_num_alergias, decreasing = TRUE)
+ggpairs(ds_alergias_ordenadas,columns = (1))
 
-# Predicción utilizando Regresión Lineal
-datos <- data.frame(frecuencia_num_alergias_ordenadas)
-
-x <- as.numeric(datos$num_alergias)
-y <- datos$Freq
-
-# Ajuste del modelo de regresión lineal
-modelo_rl <- lm(y ~ x)
-
-# Realizar predicción utilizando regresión lineal
-nuevo_x_rl <- 7
-prediccion_rl <- predict(modelo_rl, data.frame(x = nuevo_x_rl))
-
-# Imprimir la predicción utilizando regresión lineal
-cat("Predicción usando Regresión Lineal para nuevo_x =", nuevo_x_rl, ":", prediccion_rl, "\n")
-
-
-# Predicción utilizando KNN
-datos_entrenamiento <- data.frame(
-  x = as.numeric(as.character(datos$num_alergias)),
-  y = as.numeric(as.character(datos$Freq))
-)
-
-# Datos de prueba para KNN
-nuevo_x_knn <- data.frame(x = nuevo_x_rl)
-
-# Ajuste del modelo KNN
-k <- 3  # Valor de K
-prediccion_knn <- knn(train = datos_entrenamiento[, "x"], 
-                      test = nuevo_x_knn, 
-                      cl = datos_entrenamiento$y, 
-                      k = k)
-
-# Imprimir la predicción y precisión utilizando KNN
-cat("Predicción usando KNN para nuevo_x =", nuevo_x_rl, ":", prediccion_knn, "\n")
-cat("Precisión de KNN con k =", k, ":", precision_knn, "\n")
-
-# Graficar los resultados
-plot(datos$num_alergias, datos$Freq, main = "Comparación Regresión Lineal vs. KNN", 
-     xlab = "Número de usuarios", ylab = "Número de alergias")
-abline(modelo_rl, col = "blue")
-points(nuevo_x_rl, prediccion_rl, col = "purple", pch = 16)
-points(nuevo_x_rl, prediccion_knn, col = "green", pch = 16)
-legend("topright", legend = c("Datos de entrenamiento",
-                              "Modelo de RL ajustado", "Regresión lineal", "KNN"),
-       col = c("black", "blue", "red", "green"), pch = c(16, 16, 16, 16))
+ggplot(data = ds_alergias_ordenadas, aes(x = X, y = Freq, col = Freq)) +
+  geom_point()

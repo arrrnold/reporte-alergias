@@ -27,11 +27,11 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Abstract
 
-This report reflects the data analysis process of a web system developed by the authors of the document with the objective of identifying which is the allergy that is most repeated, as well as the number of most common allergies, in the same way makes use of the linear regression tools and the KNN algorithm to make a comparison between the results obtained from both methods and this, conclude that X is the most accurate tool, the most repeated allergy is to pickles and the number of most common allergies It's zero allergies.
+This report reflects the data analysis process of a web system developed by the authors of the document, the objective of the analysis is identify which is the allergy that is most repeated, as well as the number of most common allergies and use linear regression and the KNN algorithm to make a comparison between the results obtained from both methods. The conclusion is the linear regression generated very useful result to predict the number of users with six allergies which is negative due the collected data. Also the most repeated allergy is to pickles and the more frecuent allergies number it's zero allergies.
 
 # Resumen
 
-En este reporte se plasma el proceso de análisis de los datos de un sistema web desarrollado por los autores del documento con los objetivos de identificar cual es la alergia más repetida y el número de alergias más común, así como hacer uso de las herramientas de regresión lineal y el algoritmo KNN para observar las diferencias entre los mismos. Se concluye que la regresión lineal generó un resultado más útil para predecir el número de usuarios con seis alergias, además de que la alergia más repetida es pepinillos y el número de alergias más común es de cero.
+En este reporte se plasma el proceso de análisis de los datos de un sistema web desarrollado por los autores del documento con los objetivos de identificar cual es la alergia más repetida y el número de alergias más común, así como hacer uso de las herramientas de regresión lineal y el algoritmo KNN para observar las diferencias entre los mismos. Se concluye que la regresión lineal generó un resultado más útil para predecir el número de usuarios con seis alergias el cual es negativo debido a la cantidad de datos recolectados. Además, la alergia más repetida es pepinillos y el número de alergias más común es de cero.
 
 # Introducción
 
@@ -58,8 +58,6 @@ Una alergia es una reacción de su sistema inmunitario hacia algo que no molesta
 Las alergias pueden provocar una serie de síntomas como goteos nasales, estornudos, picazón, sarpullidos, edema (hinchazón) o asma. Las alergias van de leves a severas. Una reacción severa llamada anafilaxia puede resultar fatal. Los médicos usan pruebas de piel y sangre para diagnosticar las alergias. Los tratamientos incluyen medicinas, inyecciones y evitar las sustancias que causan las alergias. [4]
 
 Una alergia alimentaria es una reacción del sistema inmunitario que ocurre poco después de haber ingerido un determinado alimento. Incluso una pequeña cantidad del alimento que causa la alergia puede ocasionar signos y síntomas, como problemas digestivos, urticaria o inflamación de las vías respiratorias. En algunos casos, una alergia alimentaria puede ocasionar síntomas graves o, incluso, una reacción que puede poner en riesgo la vida, llamada anafilaxia. [5]
-
-![Aleriga alimentaria.](D:/Escritorio/IPN%20Upiiz/6%C2%AA%20Semestre/Mineria%20de%20datos/reporte/ALERGI.jpg){width="30%"}
 
 Se calcula que la alergia alimentaria afecta al 8 por ciento de los niños menores de 5 años y hasta al 4 por ciento de los adultos. A pesar de que no existe cura, algunos niños superan sus alergias alimentarias cuando crecen. [5]
 
@@ -88,8 +86,6 @@ Existen cuatro tipos de Datasets catalogados según su origen y formato, los cua
 ## R y RStudio
 
 Para la investigación se usó el lenguaje de programación R, R es un lenguaje de programación estadística ampliamente utilizado para análisis de datos, modelado estadístico y visualización. Es una plataforma gratuita y de código abierto que ofrece una amplia gama de herramientas y paquetes especializados para el procesamiento y análisis de datos. RStudio, por otro lado, es un entorno de desarrollo integrado (IDE) diseñado específicamente para trabajar con R. Proporciona una interfaz gráfica fácil de usar que facilita la escritura, ejecución y depuración de código en R. RStudio también ofrece características adicionales como paneles de visualización, administración de proyectos y colaboración en línea, lo que lo convierte en una herramienta popular entre los usuarios de R [8].
-
-![Modelo CRISP-DM.](D:/Escritorio/IPN%20Upiiz/6%C2%AA%20Semestre/Mineria%20de%20datos/reporte/CRISP-DM.png){width="30%"}
 
 ## Modelo CRISP-DM
 
@@ -163,8 +159,6 @@ En esta fase deberemos ser capaces de:
 
 Por otra parte, la regresión lineal es una técnica conocida de modelado estadístico que se utiliza para analizar la relación entre dos variables continuas. Se utiliza para predecir el valor de una variable dependiente a partir del valor de una o más variables independientes, esta asume que la relación entre las variables es lineal, lo que significa que el cambio en la variable independiente tiene un cambio proporcional en la variable dependiente. Una forma de aplicar la regresión lineal es mediante el método de mínimos cuadrados, este es un método matemático utilizado para encontrar una línea de regresión que mejor se ajusta a los datos [7]. El objetivo del método es minimizar la suma de los cuadrados de las diferencias entre los valores observados y los valores predichos por la línea de regresión.
 
-![Interpretación gráfica de la regresión lineal.](D:/Escritorio/IPN%20Upiiz/6%C2%AA%20Semestre/Mineria%20de%20datos/reporte/Regresion.png){width="30%"} \## El algoritmo KNN (K vecinos más cercanos)
-
 ## El algoritmo KNN (K vecinos más cercanos)
 
 Es un algoritmo de clasificación supervisada que usa la proximidad (por ejemplo la distancia euclidiana) para hacer clasificaciones y predicciones sobre agrupaciones de datos partiendo del supuesto de que se pueden encontrar puntos similares cerca el uno del otro. Para hacer predicciones sobre clasificaciones se toma el promedio de los k vecinos más cercanos, estas predicciones se pueden hacer para valores continuos mientras que las clasificaciones se hacen solo para valores discretos.
@@ -212,8 +206,8 @@ Usamos un conjunto de datos con 7 variables las cuales eran:
 El archivo CSV que contenía los datos tenía las columnas separadas por punto y coma y los ingredientes estaban separados por comas de la siguiente manera:
 
 ``` csv
-Names;lastNames;email;password;alergias;numero_alergias
-Valeria;Flores;valeriaflores117@example.com;Vwx234@#$;Camarones, Aceitunas;2
+Names;lastNames;email;alergias;numero_alergias
+Valeria;Flores;valeriaflores117@example.com;Camarones, Aceitunas;2
 ```
 
 Por lo tanto para hacer los análisis correspondientes importamos dicho archivo especificando el caracter que separaba las columnas con la línea de código siguiente:
@@ -303,7 +297,7 @@ y <- datos$Freq
 modelo_rl <- lm(y ~ x)
 
 # Realizar predicción utilizando regresión lineal
-numero_de_alergias <- 7
+numero_de_alergias <- 7 # posición 7 del vector de alergias ==> numero_de_alergias=6
 prediccion_rl <- predict(modelo_rl, data.frame(x = numero_de_alergias))
 ```
 
@@ -369,8 +363,7 @@ Dicho esto, el modelo predijo que el número de usuarios con seis alergias serí
 
 ```{r}
 # Imprimir la predicción utilizando regresión lineal
-cat("Predicción usando Regresión Lineal para numero_de_alergias ="
-    , numero_de_alergias-1, ":", prediccion_rl, "\n")
+cat("Predicción usando Regresión Lineal para numero_de_alergias = 6:", prediccion_rl, "\n")
 ```
 
 Por otro lado el modelo generado por el algoritmo KNN con $k = 1,2,3,4$ arrojó como predicción que el número de usuarios con seis alergias sería de 1, 1, 3 y 2 respectivamente, por lo que dejamos $k=2$ como valor final debido a que estaba más cerca a la predicción que arrojó el modelo de regresión lineal. Este resultado se muestra en la siguiente gráfica al final de esta sección.
@@ -384,8 +377,7 @@ prediccion_knn <- knn(train = datos_entrenamiento[, "x"],
                       k = k)
 
 # Imprimir la predicción del modelo de generado por KNN
-cat("Predicción usando KNN para numero_de_alergias ="
-    , numero_de_alergias-1, ":", prediccion_knn, "\n")
+cat("Predicción usando KNN para numero_de_alergias = 6:", prediccion_knn, "\n")
 ```
 
 ```{r echo=FALSE}
@@ -422,4 +414,4 @@ Es comprensible que el algoritmo KNN y la regresión lineal usan métodos distin
 
 [8] Wickham, H., & Grolemund, G. (2017). R for Data Science. O'Reilly Media.
 
-[9] IBM. (2021). ¿Qué es KNN?. [En línea]. Disponible en: <https://www.ibm.com/mx-es/topics/knn> . [Consultado: 07-jun-2023].
+[9] IBM. (2021). ¿Qué es KNN?. [En línea]. Disponible en: <https://www.ibm.com/mx-es/topics/knn>. Consultado: 07-jun-2023].

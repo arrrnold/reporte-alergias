@@ -1,8 +1,7 @@
 library(class)
 
 # Cargar el dataset
-data <- read.csv("D:/Escritorio/IPN Upiiz/6ª Semestre/Mineria de datos/reporte/usuarios.csv", sep=";")
-
+data <- read.csv("usuarios.csv",sep=";")
 # elegir la columna numero_alergias del DS
 num_alergias <- data$numero_alergias
 # tabla de frecuencias de los numeros de alergias

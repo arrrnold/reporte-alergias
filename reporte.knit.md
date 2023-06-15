@@ -21,9 +21,7 @@ header-includes:
 - \renewcommand{\and}{\\}
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+
 
 # Abstract
 
@@ -31,7 +29,7 @@ This report reflects the data analysis process of a web system developed by the 
 
 # Resumen
 
-En este reporte se plasma el proceso de análisis de los datos de un sistema web desarrollado por los autores del documento con los objetivos de identificar cual es la alergia más repetida y el número de alergias más común, así como hacer uso de las herramientas de regresión lineal y el algoritmo KNN para observar las diferencias entre los mismos. Se concluye que la regresión lineal generó un resultado más útil para predecir el número de usuarios con seis alergias, además de que la alergia más repetida es pepinillos y el número de alergias más común es de cero.
+En este reporte se plasma el proceso de análisis de los datos de un sistema web desarrollado por los autores del documento, Con los objetivos de identificar cual es la alergia que mas se logra repetir, asi como el número de alergias más común, de igual manera se hace uso de las herramientas de regresión lineal y el algoritmo KNN para realizar una comparacion entre los resultados obtenidos de ambos metodos y asi, concluir que X es la herramienta más precisa, la alergia más repetida es a los pepinillos y el número de alergias más común es cero alergias.
 
 # Introducción
 
@@ -95,7 +93,7 @@ Para la investigación se usó el lenguaje de programación R, R es un lenguaje 
 
 Para desarrollar los modelos y análisis correspondiente hicimos uso de la metodología Cross Industry Standard Process for Data Mining (CRISP-DM por sus siglas), esta es una metodología para la minería de datos que se utiliza comúnmente en el análisis de datos empresariales. La metodología consta de seis fases [6]:
 
-### Comprensión del negocio o problema
+***Comprensión del negocio***
 
 El objetivo de esta fase es alinear los objetivos del proyecto de data mining con los objetivos del negocio. Tratando así de evitar embarcarnos en un proyecto de minería de datos que no produzca ningún efecto real en la organización.
 
@@ -106,7 +104,7 @@ En esta fase deberemos ser capaces de:
 -   Fijar los objetivos a nivel de minería de datos.
 -   Obtener un plan de proyecto.
 
-### Comprensión de los datos
+***Comprensión de los datos***
 
 Dos puntos clave en esta fase: conocer los datos, estructura y distribución, y la calidad de estos.
 
@@ -115,9 +113,9 @@ En esta fase deberemos ser capaces de:
 -   Ejecutar procesos de captura de datos.
 -   Proporcionar una descripción del juego de datos.
 -   Realizar tareas de exploración de datos.
--   Gestionar la calidad de los datos, identificando problemas y proporcionando soluciones.
+-   Gestionar la calidad de los datos, identificando problemas y proporcionando - - soluciones.
 
-### **Preparación de los datos**
+***Preparación de los datos***
 
 El objetivo final de esta fase es obtener los datos finales sobre los que aplicarán los modelos.
 
@@ -125,10 +123,10 @@ En esta fase deberemos ser capaces de:
 
 -   Establecer el universo de datos con los que trabajar.
 -   Realizar tareas de limpieza de datos.
--   Construir un juego de datos apto para ser usado en modelos de minería de datos.
+-   Construir un juego de datos apto para ser usado en modelos de minería de - - - datos.
 -   Integrar datos de fuentes heterogéneas si es necesario.
 
-### Modelado
+***Modelado***
 
 El objetivo último de esta fase es construir un modelo que nos permita alcanzar los objetivos del proyecto.
 
@@ -139,7 +137,7 @@ En esta fase deberemos ser capaces de:
 -   Construir un modelo a partir de la aplicación de las técnicas seleccionadas sobre el juego de datos.
 -   Ajustar el modelo evaluando su fiabilidad y su impacto en los objetivos anteriormente establecidos.
 
-### Evaluación del modelo
+***Evaluación del modelo***
 
 En esta fase se centra en evaluar el grado de acercamiento del modelo a los objetivos.
 
@@ -149,7 +147,7 @@ En esta fase deberemos ser capaces de:
 -   Revisar todo el proceso de minería de datos que se ha llevado hasta este punto.
 -   Establecer los siguientes pasos a tomar, tanto si se trata de repetir fases anteriores como si se trata de abrir nuevas líneas de investigación.
 
-### Implementación
+***Implementación***
 
 El objetivo de esta fase es realizar la implementación de los resultados obtenidos de forma que sea propagado a los usuarios finales así como el mantenimiento de este una vez la implementación haya finalizado.
 
@@ -159,27 +157,19 @@ En esta fase deberemos ser capaces de:
 -   Realizar seguimiento y mantenimiento de la parte más operativa del despliegue.
 -   Revisar el proyecto en su globalidad con el objetivo de identiﬁcar lecciones aprendidas. [9]
 
-## La regresión lineal
-
 Por otra parte, la regresión lineal es una técnica conocida de modelado estadístico que se utiliza para analizar la relación entre dos variables continuas. Se utiliza para predecir el valor de una variable dependiente a partir del valor de una o más variables independientes, esta asume que la relación entre las variables es lineal, lo que significa que el cambio en la variable independiente tiene un cambio proporcional en la variable dependiente. Una forma de aplicar la regresión lineal es mediante el método de mínimos cuadrados, este es un método matemático utilizado para encontrar una línea de regresión que mejor se ajusta a los datos [7]. El objetivo del método es minimizar la suma de los cuadrados de las diferencias entre los valores observados y los valores predichos por la línea de regresión.
 
-![Interpretación gráfica de la regresión lineal.](D:/Escritorio/IPN%20Upiiz/6%C2%AA%20Semestre/Mineria%20de%20datos/reporte/Regresion.png){width="30%"} \## El algoritmo KNN (K vecinos más cercanos)
+![Modelo CRISP-DM.](D:/Escritorio/IPN%20Upiiz/6%C2%AA%20Semestre/Mineria%20de%20datos/reporte/Regresion.png){width="30%"}
 
-## El algoritmo KNN (K vecinos más cercanos)
-
-Es un algoritmo de clasificación supervisada que usa la proximidad (por ejemplo la distancia euclidiana) para hacer clasificaciones y predicciones sobre agrupaciones de datos partiendo del supuesto de que se pueden encontrar puntos similares cerca el uno del otro. Para hacer predicciones sobre clasificaciones se toma el promedio de los k vecinos más cercanos, estas predicciones se pueden hacer para valores continuos mientras que las clasificaciones se hacen solo para valores discretos.
-
-## Conjunto de datos de alergias
-
-El conjunto de datos que se analizó proviene de un sistema web de recetas donde los usuarios se dan de alta y especifican los ingredientes a los cuales son alérgicos, el sistema los guarda en una base de datos es ahí de donde nosotros obtuvimos el conjunto para trabajar. Algunas de las ventajas de este algoritmo son que es fácil de implementar dado que solo requiere de un valor de k que elige el analista y una métrica de distancia. Otra es que representa un buen material didáctico dada su simplicidad y precisión por lo dicho anteriormente [9].
+El conjunto de datos que se analizó proviene de un sistema web de recetas donde los usuarios se dan de alta y especifican los ingredientes a los cuales son alérgicos, el sistema los guarda en una base de datos es ahí de donde nosotros obtuvimos el conjunto para trabajar.
 
 # Experimentación y resultados
 
 ## Comprensión del problema
 
-Se genera una comparación entre los resultados que se pueden obtener de el análisis de usuarios con distintas alergias por medio de tablas de frecuencia, regresion lineal y el algoritmo KNN haciendo uso de la metodologia CRISP-DM. Los objetivos fueron predecir el número de usuarios que iban a tener 6 alergias, encontrar el ingrediente al que los usuarios en general son más alérgicos y el número de alergias más frecuente entre los usuarios
+Se genera una comparacion entre los resultados que se pueden obtener de el analisis de usuarios con distintas alergias por medio de regresion lineal haciendo uso de la metodologia CRISP-DM, haci como el analisis por medio de knn de igual manera utilizando el mismo metodo de CRISP-DM.
 
-Los datos se obtienen utilizando un conjunto de datos obtenidos mediante un sistema web, el sistema consta de un recetario, donde una vez que se ingresa a la plataforma, el usuario puede seleccionar si se tienen alergias a algun alimento, dichos datos se almacenan en una base de datos y de ahi fue posible extraerlos en como un dataset para poder realizar el análisis.
+Dichos datos se obtienen utilizando un conjunto de datos obtenidos mendiante un sistema web, el sistema consta de un recetario, donde una vez que se ingresa a la plataforma, el usuario puede seleccionar si se tienen alergias a algun alimento, dichos datos se almacenan en una base de datos y de ahi es posible que nosotros los extraigamos en un dataset para poder realizar el analisis.
 
 ## Entendimiento de los datos
 
@@ -218,7 +208,8 @@ Valeria;Flores;valeriaflores117@example.com;Vwx234@#$;Camarones, Aceitunas;2
 
 Por lo tanto para hacer los análisis correspondientes importamos dicho archivo especificando el caracter que separaba las columnas con la línea de código siguiente:
 
-```{r}
+
+```r
 data <- read.csv("usuarios.csv", sep=";")
 ```
 
@@ -228,7 +219,8 @@ data <- read.csv("usuarios.csv", sep=";")
 
 Para encontrar la alergia más frecuente hicimos un vector que contenía todos los ingredientes repetidos.
 
-```{r}
+
+```r
 # strsplit para dividir los nombres separados por coma
 # en elementos individuales
 ingredientes_separados <- strsplit(data$alergias, ",")
@@ -238,7 +230,8 @@ ingredientes <- unlist(ingredientes_separados)
 
 Para empezar realizamos una tabla de frecuencias para los ingredientes que nos permitió observar cuáles se repetían más, después esta tabla se ordenó de manera descendente según su frecuencia para después tomar el valor en la posición número 1, por último se imprime el resultado.
 
-```{r}
+
+```r
 # Cargar el dataset
 data <- read.csv("usuarios.csv", sep=";")
 
@@ -259,11 +252,16 @@ alergia_mas_comun <- names(alergias_ordenadas)[1] # alergia ubicada en el #1
 cat("La alergia más común es:", alergia_mas_comun)
 ```
 
+```
+## La alergia más común es: Pepinillos
+```
+
 ### Encontrando el número de alergias más frecuente
 
 Para esta sección también se hizo uso de una tabla de frecuencias que ordenamos de manera descendente según el número de veces que se repetía una cantidad de alergias. De nueva cuenta se seleccionó el valor en la posición número 1 para después imprimir el resultado.
 
-```{r}
+
+```r
 # Cargar el dataset
 data <- read.csv("usuarios.csv", sep=";")
 # elegir la columna numero_alergias del DS
@@ -279,130 +277,31 @@ num_alergia_mas_frecuente <- names(frecuencia_num_ordenadas)[1]
 cat("Es más común que los usuarios tengan", num_alergia_mas_frecuente, "alergias")
 ```
 
-### Predicciones usando regresión lineal y KNN
-
-Para realizar la predicción usamos las frecuencias que arrojó el análisis de la sección anterior y los hicimos dataframe, pasamos la columna num_alergias para el eje x y la de la frecuencia para el eje y. Después generamos un modelo de regresión lineal e hicimos la predicción de la frecuencia de usuarios que iban a tener 6 alergias.
-
-```{r}
-# Cargar el dataset
-data <- read.csv("usuarios.csv",sep=";")
-# elegir la columna numero_alergias del DS
-num_alergias <- data$numero_alergias
-# tabla de frecuencias de los numeros de alergias
-frecuencia_num_alergias <- table(num_alergias)
-# ordenar frecuencias de la tabla de manera descendente
-frecuencia_num_alergias_ordenadas <- sort(frecuencia_num_alergias, decreasing = TRUE)
-
-# Predicción utilizando Regresión Lineal
-datos <- data.frame(frecuencia_num_alergias_ordenadas)
-
-x <- as.numeric(datos$num_alergias)
-y <- datos$Freq
-
-# Ajuste del modelo de regresión lineal
-modelo_rl <- lm(y ~ x)
-
-# Realizar predicción utilizando regresión lineal
-numero_de_alergias <- 7
-prediccion_rl <- predict(modelo_rl, data.frame(x = numero_de_alergias))
+```
+## Es más común que los usuarios tengan 0 alergias
 ```
 
-Hicimos lo mismo de arriba para la predicción usando el algoritmo KNN:
+### Uso del algoritmo KNN
 
-```{r}
-library(class) # biblioteca que contiene la función knn()
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
-# Cargar el dataset
-data <- read.csv("usuarios.csv",sep=";")
-# elegir la columna numero_alergias del DS
-num_alergias <- data$numero_alergias
-# tabla de frecuencias de los numeros de alergias
-frecuencia_num_alergias <- table(num_alergias)
-# ordenar frecuencias de la tabla de manera descendente
-frecuencia_num_alergias_ordenadas <- sort(frecuencia_num_alergias, decreasing = TRUE)
+### Uso de la técnica de regresión lineal
 
-# Predicción utilizando Regresión Lineal
-datos <- data.frame(frecuencia_num_alergias_ordenadas)
-
-x <- as.numeric(datos$num_alergias)
-y <- datos$Freq
-
-# Predicción utilizando KNN
-datos_entrenamiento <- data.frame(
-  x = as.numeric(as.character(datos$num_alergias)),
-  y = as.numeric(as.character(datos$Freq))
-)
-
-datos_prueba <- data.frame(x = numero_de_alergias)
-
-# Ajuste del modelo KNN
-k <- 2 # Valor de K
-prediccion_knn <- knn(train = datos_entrenamiento[, "x"], 
-                      test = datos_prueba, 
-                      cl = datos_entrenamiento$y, 
-                      k = k)
-```
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 ## Resultados del modelo
 
 El análisis que se realizó a partir de tablas de frecuencia muestra que el número de alergias más frecuente es el de cero con 221 usuarios, seguido de tres, uno, cuatro, dos y cinco alergias.
 
-```{r echo=FALSE}
-# Agregar etiquetas de texto encima de las barras
-text(plot(frecuencia,ylab="Frecuencia",xlab="Número de alergias"),
-     frecuencia, labels = frecuencia, pos = 3, cex = 0.8)
-```
+![](reporte_files/figure-latex/unnamed-chunk-5-1.pdf)<!-- --> 
 
 También muestra que el ingrediente al cual los usuarios son más alérgicos son los pepinillos seguido de las espinacas, el cilantro, el tomate y la berenjena.
 
-```{r, echo=FALSE, height.size=2}
-plot(alergias_ordenadas[1:5], xlab="Ingrediente", ylab="Frecuencia", ylim=c(0,100))
-```
-
-El modelo de regresión lineal generado arrojó un ajuste de R cuadrado de 0.7 lo que indica que el data frame usado contenía una muestra suficiente de datos para lograr la predicción propuesta.
-
-```{r}
-summary(modelo_rl)
-```
-
-Dicho esto, el modelo predijo que el número de usuarios con seis alergias sería de -8 de lo cual podemos deducir que no existirían usuarios con ese número de alergias (al menos basado en los datos utilizados). En la gráfica al final de esta sección no se alcanza a apreciar ese valor porque es negativo y la función usada para hacer la gráfica usa solo valores positivos.
-
-```{r}
-# Imprimir la predicción utilizando regresión lineal
-cat("Predicción usando Regresión Lineal para numero_de_alergias ="
-    , numero_de_alergias-1, ":", prediccion_rl, "\n")
-```
-
-Por otro lado el modelo generado por el algoritmo KNN con $k = 1,2,3,4$ arrojó como predicción que el número de usuarios con seis alergias sería de 1, 1, 3 y 2 respectivamente, por lo que dejamos $k=2$ como valor final debido a que estaba más cerca a la predicción que arrojó el modelo de regresión lineal. Este resultado se muestra en la siguiente gráfica al final de esta sección.
-
-```{r}
-# Ajuste del modelo KNN
-k <- 2 # Valor de K
-prediccion_knn <- knn(train = datos_entrenamiento[, "x"], 
-                      test = datos_prueba, 
-                      cl = datos_entrenamiento$y, 
-                      k = k)
-
-# Imprimir la predicción del modelo de generado por KNN
-cat("Predicción usando KNN para numero_de_alergias ="
-    , numero_de_alergias-1, ":", prediccion_knn, "\n")
-```
-
-```{r echo=FALSE}
-# Graficar los resultados
-plot(datos$num_alergias, datos$Freq, main = "Comparación Regresión Lineal vs. KNN", 
-     xlab = "Número de alergias", ylab = "Número de usuarios")
-abline(modelo_rl, col = "blue")
-points(numero_de_alergias, prediccion_rl, col = "purple", pch = 1)
-points(prediccion_knn, numero_de_alergias, col = "green", pch = 1)
-legend("topright", legend = c("Datos de entrenamiento",
-                              "Modelo de RL ajustado", "Regresión lineal","KNN"),
-       col = c("black", "blue", "red","green"), pch = c(1, 16, 16, 16))
-```
+![](reporte_files/figure-latex/unnamed-chunk-6-1.pdf)<!-- --> 
 
 # Conclusiones
 
-Es comprensible que el algoritmo KNN y la regresión lineal usan métodos distintos para hacer predicciones pero no debería variar tanto el resultado de la predicción que arrojan. Por lo tanto afirmamos que estas dos técnicas tienen un resultado más preciso según el conjunto de datos donde se apliquen.
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 # Referencias
 
@@ -421,5 +320,3 @@ Es comprensible que el algoritmo KNN y la regresión lineal usan métodos distin
 [7] Online Statistics Education: A Multimedia Course of Study. (2019). Linear Regression. Disponible en: [<http://onlinestatbook.com/2/regression/intro.html>]. [Consultado: 07-jun-2023].
 
 [8] Wickham, H., & Grolemund, G. (2017). R for Data Science. O'Reilly Media.
-
-[9] IBM. (2021). ¿Qué es KNN?. [En línea]. Disponible en: <https://www.ibm.com/mx-es/topics/knn> . [Consultado: 07-jun-2023].

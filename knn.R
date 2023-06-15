@@ -1,33 +1,38 @@
-# Cargar paquetes necesarios
-library(class)
+# numero_repetido.R
 
 # Cargar el dataset
 data <- read.csv("usuarios.csv", sep=";")
+# elegir la columna numero_alergias del DS
+num_alergias <- data$numero_alergias
+# tabla de frecuencias de los numeros de alergias
+frecuencia_num_alergias <- table(num_alergias)
+# ordenar frecuencias de la tabla de manera descendente
+frecuencia_num_alergias_ordenadas <- sort(frecuencia_num_alergias,decreasing = TRUE)
+# elegir la alergia #1
+num_alergia_mas_frecuente <- names(frecuencia_num_alergias_ordenadas)[1]
+# imprimir solución
+plot(frecuencia_num_alergias_ordenadas,
+     ylab="Numero de alergias",xlab="Cantidad de usuarios")
+cat("Es más común que los usuarios tengan", num_alergia_mas_frecuente, "alergias")
 
-# Reemplazar campos vacíos con NA
-data[data == ""] <- NA
+# predecir el num de usuarios que van a tener 6 alergias usando KNN
+library(class)
 
-# Imputación por la media
-mean_vals <- colMeans(data[, "numero_alergias"], na.rm = TRUE)
-data[, "numero_alergias"] <- ifelse(is.na(data[, "numero_alergias"]), mean_vals, data[, "numero_alergias"])
+# Datos de ejemplo
+datos <- data.frame(frecuencia_num_alergias_ordenadas)
+x <- as.numeric(datos$num_alergias)
+y <- datos$Freq
 
-# Dividir los datos en conjunto de entrenamiento y conjunto de prueba
-set.seed(123)
-train_indices <- sample(1:nrow(data), size = 0.7 * nrow(data), replace = FALSE)
-train_data <- data[train_indices, ]
-test_data <- data[-train_indices, ]
+# Ajuste del modelo KNN ponderado
+k <- 3  # Número de vecinos más cercanos a considerar
+nuevo_x <- c(7) # cuando x=6 qué valor habrá en y
+prediccion <- knn(train = matrix(x), test = matrix(nuevo_x), cl = y, k = k, prob = TRUE, use.all = TRUE)
 
-# Entrenar el modelo KNN
-k <- 1  # Número de vecinos cercanos
-knn_model <- knn(
-  train = as.matrix(train_data[, "numero_alergias"]),
-  test = as.matrix(test_data[, "numero_alergias"]),
-  cl = train_data[, "alergias"],
-  k = k
-)
+# Imprimir la predicción
+cat("Predicción para nuevo_x:", prediccion, "\n")
 
-# Imprimir las predicciones
-cat("Predicciones del modelo KNN:\n")
-print(knn_model)
+# Graficar los datos de entrenamiento y la predicción
+plot(x, y, main = "KNN Ponderado - Regresión", xlab = "x", ylab = "y")
+points(nuevo_x, prediccion, col = "red", pch = 16)
+legend("topleft", legend = c("Datos de entrenamiento", "Predicción"), col = c("black", "red"), pch = c(1, 16))
 
-plot(knn_model)

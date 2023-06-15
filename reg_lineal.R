@@ -39,8 +39,9 @@ prediccion <- predict(modelo, data.frame(x = nuevo_x))
 cat("prediccion para nuevo_x:", prediccion, "\n")
 
 # Graficar los datos de entrenamiento y el modelo ajustado
-plot(x, y, main = "Regresión Lineal Simple", xlab = "x", ylab = "y")
+plot(x, y, main = "Regresión Lineal Simple", xlab = "Número de usuarios", ylab = "Número de alergias")
 abline(modelo, col = "blue")
 points(nuevo_x, prediccion, col = "red", pch = 16)
-legend("topleft", legend = c("Datos de entrenamiento", "Modelo ajustado", "prediccion"), col = c("black", "blue", "red"), pch = c(1, NA, 16))
+legend("topleft", legend = c("Datos de entrenamiento", "Modelo ajustado", "Predicción"),
+       col = c("black", "blue", "red"), pch = c(1, 16, 16))
 

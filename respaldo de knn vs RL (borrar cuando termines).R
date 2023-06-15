@@ -19,11 +19,11 @@ y <- datos$Freq
 modelo_rl <- lm(y ~ x)
 
 # Realizar predicción utilizando regresión lineal
-nuevo_x_rl <- 7
-prediccion_rl <- predict(modelo_rl, data.frame(x = nuevo_x_rl))
+numero_de_alergias <- 7
+prediccion_rl <- predict(modelo_rl, data.frame(x = numero_de_alergias))
 
 # Imprimir la predicción utilizando regresión lineal
-cat("Predicción usando Regresión Lineal para nuevo_x =", nuevo_x_rl, ":", prediccion_rl, "\n")
+cat("Predicción usando Regresión Lineal para numero_de_alergias =", numero_de_alergias-1, ":", prediccion_rl, "\n")
 
 
 # Predicción utilizando KNN
@@ -32,26 +32,25 @@ datos_entrenamiento <- data.frame(
   y = as.numeric(as.character(datos$Freq))
 )
 
-# Datos de prueba para KNN
-nuevo_x_knn <- data.frame(x = nuevo_x_rl)
+datos_prueba <- data.frame(x = numero_de_alergias)
 
 # Ajuste del modelo KNN
-k <- 3  # Valor de K
+k <- 1 # Valor de K
 prediccion_knn <- knn(train = datos_entrenamiento[, "x"], 
-                      test = nuevo_x_knn, 
+                      test = datos_prueba, 
                       cl = datos_entrenamiento$y, 
                       k = k)
 
-# Imprimir la predicción y precisión utilizando KNN
-cat("Predicción usando KNN para nuevo_x =", nuevo_x_rl, ":", prediccion_knn, "\n")
-cat("Precisión de KNN con k =", k, ":", precision_knn, "\n")
+# Imprimir la predicción utilizando KNN
+cat("Predicción usando KNN para numero_de_alergias =", numero_de_alergias-1, ":", prediccion_knn, "\n")
 
 # Graficar los resultados
 plot(datos$num_alergias, datos$Freq, main = "Comparación Regresión Lineal vs. KNN", 
      xlab = "Número de usuarios", ylab = "Número de alergias")
 abline(modelo_rl, col = "blue")
-points(nuevo_x_rl, prediccion_rl, col = "purple", pch = 16)
-points(nuevo_x_rl, prediccion_knn, col = "green", pch = 16)
+points(numero_de_alergias, prediccion_rl, col = "purple", pch = 16)
+points(prediccion_knn, numero_de_alergias, col = "green", pch = 16)
 legend("topright", legend = c("Datos de entrenamiento",
-                              "Modelo de RL ajustado", "Regresión lineal", "KNN"),
-       col = c("black", "blue", "red", "green"), pch = c(16, 16, 16, 16))
+                              "Modelo de RL ajustado", "Regresión lineal","KNN"),
+       col = c("black", "blue", "red","green"), pch = c(16, 16, 16, 16))
+

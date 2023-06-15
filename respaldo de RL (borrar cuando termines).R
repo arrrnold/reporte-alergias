@@ -37,7 +37,7 @@ summary(modelo)
 coeficientes <- coef(modelo)
 
 # Realizar predicciones
-nuevo_x <- c(7, 8, 9)
+nuevo_x <- c(7)
 prediccion <- predict(modelo, data.frame(x = nuevo_x))
 
 # Imprimir las predicciones
@@ -48,6 +48,8 @@ plot(datos$num_alergias, datos$Freq, main = "Regresión Lineal Simple",
      xlab = "Número de usuarios", ylab = "Número de alergias")
 abline(modelo, col = "blue")
 points(nuevo_x, prediccion, col = "red", pch = 16)
+points(nuevo_x, prediccion_knn, col = "red", pch = 16)
 legend("topleft", legend = c("Datos de entrenamiento",
                              "Modelo ajustado", "Predicciones"),
-       col = c("black", "blue", "red"), pch = c(1, 16, 16))
+       col = c("black", "blue", "red"), pch = c(16, 16, 16))
+

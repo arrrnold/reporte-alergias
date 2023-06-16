@@ -1,38 +1,42 @@
 library(class)
 
-# Cargar el dataset
-data <- read.csv("usuarios.csv",sep=";")
-# elegir la columna numero_alergias del DS
-num_alergias <- data$numero_alergias
-# tabla de frecuencias de los numeros de alergias
-frecuencia_num_alergias <- table(num_alergias)
-# ordenar frecuencias de la tabla de manera descendente
-frecuencia_num_alergias_ordenadas <- sort(frecuencia_num_alergias, decreasing = TRUE)
-
-# Predicción utilizando Regresión Lineal
-datos <- data.frame(frecuencia_num_alergias_ordenadas)
-
-x <- as.numeric(datos$num_alergias)
-y <- datos$Freq
+# Datos de ejemplo
+x <- c(0,3,1,4,2,5)
+y <- c(221,109,99,79,77,25)
 
 # Ajuste del modelo de regresión lineal
-modelo_rl <- lm(y ~ x)
+modelo <- lm(y ~ x)
 
-# Realizar predicción utilizando regresión lineal
-numero_de_alergias <- 7
-prediccion_rl <- predict(modelo_rl, data.frame(x = numero_de_alergias))
+# Resumen del modelo
+summary(modelo)
 
-# Imprimir la predicción utilizando regresión lineal
-cat("Predicción usando Regresión Lineal para numero_de_alergias =", numero_de_alergias-1, ":", prediccion_rl, "\n")
+# Obtener los coeficientes de la regresión
+coeficientes <- coef(modelo)
 
+# Imprimir los coeficientes
+cat("Coeficiente de la intersección (b0):", coeficientes[1], "\n")
+cat("Coeficiente de la pendiente (b1):", coeficientes[2], "\n")
+
+# Realizar predicciones
+nuevo_x <- c(6)
+predicciones <- predict(modelo, data.frame(x = nuevo_x))
+
+# Imprimir las predicciones
+cat("Predicciones para nuevo_x:", predicciones, "\n")
+
+# Graficar los datos de entrenamiento y el modelo ajustado
+plot(x, y, main = "Regresión Lineal Simple", xlab = "x", ylab = "y",xlim=NULL)
+points(nuevo_x, predicciones, col = "red", pch = 16)
+abline(modelo, col = "blue")
+legend("topleft", legend = c("Datos de entrenamiento", "Modelo ajustado", "Predicciones"), col = c("black", "blue", "red"), pch = c(1, NA, 16))
 
 # Predicción utilizando KNN
 datos_entrenamiento <- data.frame(
-  x = as.numeric(as.character(datos$num_alergias)),
-  y = as.numeric(as.character(datos$Freq))
+  x = x,
+  y = y
 )
 
-datos_prueba <- data.frame(x = numero_de_alergias)
+datos_prueba <- data.frame(x = nuevo_x)
 
 # Ajuste del modelo KNN
 k <- 2 # Valor de K
@@ -42,7 +46,7 @@ prediccion_knn <- knn(train = datos_entrenamiento[, "x"],
                       k = k)
 
 # Imprimir la predicción utilizando KNN
-cat("Predicción usando KNN para numero_de_alergias =", numero_de_alergias-1, ":", prediccion_knn, "\n")
+cat("Predicción usando KNN para numero_de_alergias =", nuevo_x, ":", prediccion_knn, "\n")
 
 # Graficar los resultados
 plot(datos$num_alergias, datos$Freq, main = "Comparación Regresión Lineal vs. KNN", 
